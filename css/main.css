@@ -38,6 +38,7 @@ body {
     text-shadow: none;
 }
 
+
 /*
  * A better looking default horizontal rule
  */
@@ -46,10 +47,17 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 2px solid #000;
     margin: 1em 0;
     padding: 0;
+} 
+section hr {
+    width: 55px;
 }
+hr.c-1 { border-color:#fff;}
+hr.c-2 { border-color:#333333;}
+hr.c-3 { border-color:#d03938;}
+hr.c-4 { border-color:#8b2742;}
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -83,7 +91,9 @@ fieldset {
 textarea {
     resize: vertical;
 }
-
+section.content {
+    padding: 120px 0 100px;
+}
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -127,14 +137,56 @@ a {
 /*
  * Hide visually and from screen readers
  */
+ .img-responsive {    display: inline-block; }
 .fullheight {
     height: 100vh;
+}
+.fullsize {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    position: relative;
 }
 
 .hidden {
     display: none !important;
 }
+.color-1 { color:#FFF; }
+.color-2 { color:#333333; }
+.color-3 { color:#d03938; }
+.color-4 { color:#8b2742; }
 
+.bg-1 { background:#FFF; }
+.bg-2 { background:#333333; }
+.bg-3 { background:#d03938; }
+.bg-4 { background:#8b2742; }
+/*---seccion con quote*/
+ section.quote {
+    height: 560px;
+ }
+ section.quote {
+    text-transform: uppercase;
+    background-size: cover;
+    background-attachment: fixed;    
+ }
+ section.quote h2 {
+    color:#FFF;
+    margin-top: 50%;
+    font-size:66px;
+    line-height: 68px;
+    margin: 0;
+    margin-top: 280px;
+    transform: translateY(-50%);
+
+ }
+ section.quote h2 small {
+    color:#FFF;
+    text-transform: none;
+
+ }
+ section.quote h2 span {
+    color: #d03938;
+ }
 /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -438,38 +490,107 @@ a {
             bottom: -10px;
         }
 
-/*Efecto de hambuger*/
-.hamburger--efecto .hamburger-box{
-    -webkit-perspective: 80px;
-    perspective: 80px;
-}
-    .hamburger--efecto .hamburger-inner{
-        transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-        transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
-        transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-    }
-        .hamburger--efecto .hamburger-inner::after{
-            transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
-            transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
-            transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+        /*Efecto de hambuger*/
+        .hamburger--efecto .hamburger-box{
+            -webkit-perspective: 80px;
+            perspective: 80px;
         }
-        .hamburger--efecto.is-active .hamburger-inner{
-            background-color: transparent;
-            -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-        }
-        .hamburger--efecto.is-active .hamburger-inner::before{
-            -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
-            transform: translate3d(0, 10px, 0) rotate(45deg);
-        }
-        .hamburger--efecto.is-active .hamburger-inner::after{
-            -webkit-transform: translate3d(0, -10px, 0) rotate(-45deg);
-            transform: translate3d(0, -10px, 0) rotate(-45deg);
-        }
+            .hamburger--efecto .hamburger-inner{
+                transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+                transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+            }
+                .hamburger--efecto .hamburger-inner::after{
+                    transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+                }
+                .hamburger--efecto.is-active .hamburger-inner{
+                    background-color: transparent;
+                    -webkit-transform: rotateY(180deg);
+                    transform: rotateY(180deg);
+                }
+                .hamburger--efecto.is-active .hamburger-inner::before{
+                    -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
+                    transform: translate3d(0, 10px, 0) rotate(45deg);
+                }
+                .hamburger--efecto.is-active .hamburger-inner::after{
+                    -webkit-transform: translate3d(0, -10px, 0) rotate(-45deg);
+                    transform: translate3d(0, -10px, 0) rotate(-45deg);
+                }
 
 
 /*/--------------SECTIONS*/
+/*hero*/
 .hero {
     background-image: url('../img/Estudio_A-BF-F-M_09_med-res-byn.jpg');
     background-size: cover;
+}
+.hero .fullsize {
+    background: #00000080;
+}
+.hero .fullsize img {
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+/*---fin hero---*/
+.socios-1 img{
+    width: 100%;
+}
+#quote1 {
+    background-image: url('../img/quote1.jpg');
+}
+#quote2 {
+    background-image: url('../img/quote2.jpg');
+}
+#quote3 {
+    background-image: url('../img/quote3.jpg');
+}
+#quote4 {
+    background-image: url('../img/quote4.jpg');
+    background-position: center;
+}
+#quote5 {
+    background-image: url('../img/quote5.jpg');
+}
+#practica .practica-listado li {
+    display: table;
+}
+#practica .practica-listado li span {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+#practica .practica-listado li>span:first-of-type {
+    font-size: 40px;
+    width: 82px;
+}
+#practica .practica-listado li>span:last-of-type {
+    text-transform: uppercase;
+}
+#socios .socios-listado li {
+    display: table;
+}
+#socios .socios-listado li>span {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+#socios .socios-listado li>span:first-of-type {
+    max-width: 220px;
+    
+}
+#socios .socios-listado li span:first-of-type  span {
+    background-size: cover;
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+
+}
+#socios .socios-listado li>span:last-of-type {
+    padding-bottom: 30px;
+    padding-left: 15px;
+}
+#socios .socios-listado li .socio__data span {
+    display: block;
 }
