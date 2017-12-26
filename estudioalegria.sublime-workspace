@@ -1,0 +1,743 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"capacita",
+				"capacitacion-sueldos-08-2016"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"none",
+				"none!important"
+			],
+			[
+				"borde",
+				"border-box"
+			],
+			[
+				"col-md-o",
+				"col-md-offset-3\t bootstrap.min.css"
+			],
+			[
+				"lan",
+				"landing-banner"
+			],
+			[
+				"btnPr",
+				"btnPricingPlan"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"array_k",
+				"array_key_exists"
+			],
+			[
+				"cantidad",
+				"cantidadempleadosadm"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"has",
+				"hasClass"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"Sans",
+				"sans-serif"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 5050,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */\n\n/*\n * What follows is the result of much research on cross-browser styling.\n * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,\n * Kroc Camen, and the H5BP dev community and team.\n */\n\n/* ==========================================================================\n   Base styles: opinionated defaults\n   ========================================================================== */\n\nhtml {\n    color: #222;\n    font-size: 1em;\n    line-height: 1.4;\n}\n\n/*\n * Remove text-shadow in selection highlight:\n * https://twitter.com/miketaylr/status/12228805301\n *\n * Vendor-prefixed and regular ::selection selectors cannot be combined:\n * https://stackoverflow.com/a/16982510/7133471\n *\n * Customize the background color to match your design.\n */\n\n::-moz-selection {\n    background: #b3d4fc;\n    text-shadow: none;\n}\n\n::selection {\n    background: #b3d4fc;\n    text-shadow: none;\n}\n\n/*\n * A better looking default horizontal rule\n */\n\nhr {\n    display: block;\n    height: 1px;\n    border: 0;\n    border-top: 1px solid #ccc;\n    margin: 1em 0;\n    padding: 0;\n}\n\n/*\n * Remove the gap between audio, canvas, iframes,\n * images, videos and the bottom of their containers:\n * https://github.com/h5bp/html5-boilerplate/issues/440\n */\n\naudio,\ncanvas,\niframe,\nimg,\nsvg,\nvideo {\n    vertical-align: middle;\n}\n\n/*\n * Remove default fieldset styles.\n */\n\nfieldset {\n    border: 0;\n    margin: 0;\n    padding: 0;\n}\n\n/*\n * Allow only vertical resizing of textareas.\n */\n\ntextarea {\n    resize: vertical;\n}\n\n/* ==========================================================================\n   Browser Upgrade Prompt\n   ========================================================================== */\n\n.browserupgrade {\n    margin: 0.2em 0;\n    background: #ccc;\n    color: #000;\n    padding: 0.2em 0;\n}\n\n/* ==========================================================================\n   Author's custom styles\n   ========================================================================== */\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* ==========================================================================\n   Helper classes\n   ========================================================================== */\n\n/*\n * Hide visually and from screen readers\n */\n\n.hidden {\n    display: none !important;\n}\n\n/*\n * Hide only visually, but have it available for screen readers:\n * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility\n *\n * 1. For long content, line feeds are not interpreted as spaces and small width\n *    causes content to wrap 1 word per line:\n *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe\n */\n\n.visuallyhidden {\n    border: 0;\n    clip: rect(0 0 0 0);\n    -webkit-clip-path: inset(50%);\n    clip-path: inset(50%);\n    height: 1px;\n    margin: -1px;\n    overflow: hidden;\n    padding: 0;\n    position: absolute;\n    width: 1px;\n    white-space: nowrap; /* 1 */\n}\n\n/*\n * Extends the .visuallyhidden class to allow the element\n * to be focusable when navigated to via the keyboard:\n * https://www.drupal.org/node/897638\n */\n\n.visuallyhidden.focusable:active,\n.visuallyhidden.focusable:focus {\n    clip: auto;\n    -webkit-clip-path: none;\n    clip-path: none;\n    height: auto;\n    margin: 0;\n    overflow: visible;\n    position: static;\n    width: auto;\n    white-space: inherit;\n}\n\n/*\n * Hide visually and from screen readers, but maintain layout\n */\n\n.invisible {\n    visibility: hidden;\n}\n\n/*\n * Clearfix: contain floats\n *\n * For modern browsers\n * 1. The space content is one way to avoid an Opera bug when the\n *    `contenteditable` attribute is included anywhere else in the document.\n *    Otherwise it causes space to appear at the top and bottom of elements\n *    that receive the `clearfix` class.\n * 2. The use of `table` rather than `block` is only necessary if using\n *    `:before` to contain the top-margins of child elements.\n */\n\n.clearfix:before,\n.clearfix:after {\n    content: \" \"; /* 1 */\n    display: table; /* 2 */\n}\n\n.clearfix:after {\n    clear: both;\n}\n\n/* ==========================================================================\n   EXAMPLE Media Queries for Responsive Design.\n   These examples override the primary ('mobile first') styles.\n   Modify as content requires.\n   ========================================================================== */\n\n@media only screen and (min-width: 35em) {\n    /* Style adjustments for viewports that meet the condition */\n}\n\n@media print,\n       (-webkit-min-device-pixel-ratio: 1.25),\n       (min-resolution: 1.25dppx),\n       (min-resolution: 120dpi) {\n    /* Style adjustments for high resolution devices */\n}\n\n/* ==========================================================================\n   Print styles.\n   Inlined to avoid the additional HTTP request:\n   http://www.phpied.com/delay-loading-your-print-css/\n   ========================================================================== */\n\n@media print {\n    *,\n    *:before,\n    *:after {\n        background: transparent !important;\n        color: #000 !important; /* Black prints faster:\n                                   http://www.sanbeiji.com/archives/953 */\n        box-shadow: none !important;\n        text-shadow: none !important;\n    }\n\n    a,\n    a:visited {\n        text-decoration: underline;\n    }\n\n    a[href]:after {\n        content: \" (\" attr(href) \")\";\n    }\n\n    abbr[title]:after {\n        content: \" (\" attr(title) \")\";\n    }\n\n    /*\n     * Don't show links that are fragment identifiers,\n     * or use the `javascript:` pseudo protocol\n     */\n\n    a[href^=\"#\"]:after,\n    a[href^=\"javascript:\"]:after {\n        content: \"\";\n    }\n\n    pre {\n        white-space: pre-wrap !important;\n    }\n    pre,\n    blockquote {\n        border: 1px solid #999;\n        page-break-inside: avoid;\n    }\n\n    /*\n     * Printing Tables:\n     * http://css-discuss.incutio.com/wiki/Printing_Tables\n     */\n\n    thead {\n        display: table-header-group;\n    }\n\n    tr,\n    img {\n        page-break-inside: avoid;\n    }\n\n    p,\n    h2,\n    h3 {\n        orphans: 3;\n        widows: 3;\n    }\n\n    h2,\n    h3 {\n        page-break-after: avoid;\n    }\n}\n\n",
+			"file": "css/main.css",
+			"file_size": 6200,
+			"file_write_time": 131495969360000000,
+			"settings":
+			{
+				"buffer_size": 6201,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 270.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 510.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp64/www/estudioalegria",
+		"/C/wamp64/www/estudioalegria/css"
+	],
+	"file_history":
+	[
+		"/C/wamp64/www/aipem/como-servicio/index.php",
+		"/C/wamp64/www/aipem/medios_pago.php",
+		"/C/wamp64/www/aipem/newsletter/sac-diciembre-2017.html",
+		"/C/wamp64/www/aipem/js/main.js",
+		"/C/wamp64/www/aipem/css/main.css",
+		"/C/wamp64/www/aipem/newsletter/seccloud-2017.html",
+		"/C/wamp64/www/aipem/index.php",
+		"/C/wamp64/www/aipem/newsletter/15-11-2017.html",
+		"/C/wamp64/www/aipem/aipemCloud.html",
+		"/C/wamp64/www/aipem/sftp-config.json",
+		"/C/wamp64/www/aipem/includes/nav.php",
+		"/C/wamp64/www/aipem/includes/footer.php",
+		"/C/wamp64/www/aipem/newsletter/fin-de-ano.html",
+		"/C/wamp64/www/aipem/cms/includes/header.php",
+		"/C/wamp64/www/aipem/cms/post.php",
+		"/C/wamp64/www/aipem/newsletter/control-moviles-2017.html",
+		"/C/wamp64/www/aipem/como-servicio/como-servicio-mail.html",
+		"/C/wamp64/www/aipem/newsletter/mail-standard.html",
+		"/C/wamp64/www/aipem/cms/includes/footer.php",
+		"/C/wamp64/www/aipem/como-servicio/sendemail-servicio.php",
+		"/C/wamp64/www/aipem/newsletter/06-10-2017.html",
+		"/C/wamp64/www/aipem/cms/includes/dtb-connect.php",
+		"/C/wamp64/www/aipem/includes/footer-interna.php",
+		"/C/wamp64/www/aipem/clases/Conexion.php",
+		"/C/wamp64/www/aipem/test.php",
+		"/C/wamp64/www/aipem/includes/nav-interna.php",
+		"/C/wamp64/www/aipem/capacitacion/capacitacionsueldos09-2017.html",
+		"/C/wamp64/www/aipem/css/responsive.css",
+		"/C/wamp64/www/aipem/js/lavalamp-config.js",
+		"/C/wamp64/www/aipem/aipemBlog.php",
+		"/C/wamp64/www/aipem/includes/promo-1.php",
+		"/C/wamp64/www/aipem/includes/propaganda-blog.php",
+		"/C/wamp64/www/aipem/aipemsec.html",
+		"/C/wamp64/www/aipem/blogpost.php",
+		"/C/wamp64/www/aipem/aipemadm.html",
+		"/C/wamp64/www/aipem/webinar/gracias-webinar.html",
+		"/C/wamp64/www/aipem/gracias.html",
+		"/C/wamp64/www/aipem/sendemail.php",
+		"/C/wamp64/www/aipem/aipemPlus.html",
+		"/C/Users/alan_/Desktop/index.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/js/main.js",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/cms/post.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/blogpost.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/sendemail.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/css/main.css",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/newsletter/25-1-2017.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/Fin-de-ano-2016/findeano-sendmail.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/webinar/webinar-sendmail.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/includes/propaganda-blog.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/newsletter/02-05-2017.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/newsletter/27-4-2017.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/Fin-de-ano-2016/index.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/webinar/index.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/aipemsec/index.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/aipemsec/cronograma.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/newsletter/06-01-2017.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/aipemBlog.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/js/lightbox.min.js",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/clientes.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/gracias.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/aipemadm.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/aipemsec.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/aipemsec2.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/aipemBlog.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/aipemCloud.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/aipemMsj.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/aipemPlus.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/index.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/Fin-de-ano-2016/main.js",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/newsletter/fin-de-ano.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/Fin-de-ano-2016/findeano-sendmail2.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/Fin-de-ano-2016/gracias-findeano.html",
+		"/T/Mis Documentos/Laburos/Aipem/Envio mails/nuevas-oficinas.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/Fin-de-ano-2016/contact-webinar.js",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/newsletter/nuevas-oficinas.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/css/responsive.css",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/webinar/contact-webinar.js",
+		"/T/Mis Documentos/Laburos/Aipem/Envio mails/cronograma envio 05-09-2016/cronograma-septiembre.html",
+		"/C/Users/Alan/Desktop/utilities.js",
+		"/C/Users/Alan/Desktop/plugins.all.min.js",
+		"/C/Users/Alan/Desktop/header.php",
+		"/C/Users/Alan/Desktop/footer.php",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/newsletter/signature.html",
+		"/C/Users/Alan/AppData/Roaming/Sublime Text 3/Packages/Javascript Beautify/JavascriptBeautify.sublime-settings",
+		"/C/Users/Alan/AppData/Roaming/Sublime Text 3/Packages/Javascript Beautify/Default (Windows).sublime-keymap",
+		"/T/Mis Documentos/Laburos/Aipem/Envio mails/proximas capacitaciones 05-09-2016/proximas-05-09-2016.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/webinar/webinar-aipem.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/sftp-config.json",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/webinar/main.js",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/.htaccess",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/js/mousescroll.js",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/js/modules-detail.js",
+		"/T/Mis Documentos/Laburos/Aipem/Envio mails/Capacitacion Sueldos 08-2016/capacitacionsueldos08-2016.html",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/js/wow.min.js",
+		"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/data/localweb/aipem/test",
+		"/C/Users/Alan/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/Alan/AppData/Roaming/Sublime Text 3/Packages/User/PHP.sublime-settings",
+		"/C/Users/Alan/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/Alan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Alan/Desktop/bibliografika/test.php"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 139.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5050,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2027,
+								2027
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1685,
+										1686
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1666,
+										1667
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 432.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6201,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6201,
+								6201
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Monokai.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4914.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 48.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "estudioalegria.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\wamp64\\www\\cursoscapacitarteorg\\cursoscapacitarteorg.sublime-project"
+			],
+			[
+				"iron",
+				"C:\\wamp64\\www\\Ironside\\preteaser.sublime-project"
+			],
+			[
+				"consor",
+				"C:\\Program Files (x86)\\EasyPHP-DevServer-14.1VC11\\data\\localweb\\Consorlimp\\consorlimp.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 257.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
