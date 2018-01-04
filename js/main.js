@@ -6,8 +6,8 @@ var App = function () {
 
 		hamburger: function() {
 			$('.hamburger').click(function(){
-				$(this).addClass('active');
-			});
+				$(this).toggleClass('is-active');
+			});			
 			$('.dropdown-toggle').click(function(){
 				$(this).parent().toggleClass('open');
 			});
@@ -29,7 +29,7 @@ var App = function () {
 		},
 		init: function () {
 			App.hamburger();
-			// App.WOW();
+			App.WOW();
 			// App.navActive();
 		}
 	}
@@ -40,9 +40,3 @@ jQuery(document).ready(function (){
  window.onload = function () {
 	App.onload();
 };
-
-	$(document).ready(function(){
-		$('.hamburger').click(function(){
-			$(this).toggleClass('is-active');
-		});
-	});
