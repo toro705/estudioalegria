@@ -44,7 +44,7 @@ body {
  */
 
 hr {
-    display: block;
+    display:  inline-block;
     height: 1px;
     border: 0;
     border-top: 2px solid #000;
@@ -104,6 +104,13 @@ section.content {
     color: #000;
     padding: 0.2em 0;
 }
+.transition {
+    text-decoration: none;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;    
+}
 button,
 a {
     text-decoration: none;
@@ -122,17 +129,49 @@ a:visited {
    ========================================================================== */
 
 
+.h1,
+h1 {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+.h1 b,
+h1 b {
+    font-weight: 400;
+}
+.h2,
+h2 {
+    font-size: 24px;
+    line-height: 32px;
+}
+.h3,
+h3 {
+    font-size: 11px;
+    line-height: 25px;
+}
+
+.paragraph-1 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+}
+.paragraph-2 {
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 300;
+}
 
 
 
 
 
-
-
-
-
-
-
+* h3 .thin,
+* .thin,
+* small {
+    font-weight: 300;
+}
 
 
 
@@ -166,6 +205,28 @@ a:visited {
 .bg-2 { background:#333333; }
 .bg-3 { background:#d03938; }
 .bg-4 { background:#8b2742; }
+
+.m-top-20 {margin-top: 20px;}
+.m-top-30 {margin-top: 30px;}
+.m-top-40 {margin-top: 40px;}
+
+.m-bottom-20 {margin-bottom: 20px;}
+.m-bottom-30 {margin-bottom: 30px;}
+.m-bottom-40 {margin-bottom: 40px;}
+/*====MODAL ESTILOS===*/
+.modal-footer,
+.modal-header {
+    border: none;
+}
+.modal-header .close {
+    float: left;
+    font-size: 45px;
+    color: #FFF;
+}
+.modal-dialog {
+    margin: 0;
+}
+/*====FIN MODAL ESTILOS===*/
 /*---seccion con quote*/
  section.quote {
     height: 560px;
@@ -178,8 +239,8 @@ a:visited {
  section.quote h2 {
     color:#FFF;
     margin-top: 50%;
-    font-size:66px;
-    line-height: 68px;
+    font-size:45px;
+    line-height: 50px;
     margin: 0;
     margin-top: 280px;
     transform: translateY(-50%);
@@ -187,11 +248,28 @@ a:visited {
  }
  section.quote h2 small {
     color:#FFF;
+    font-weight: 300;
     text-transform: none;
 
  }
  section.quote h2 span {
     color: #d03938;
+ }
+ /*===botones===*/
+ .btn-bordered {
+    background: transparent;
+    border: 1px solid #FFF;
+    color: #FFF;
+    border-radius: 0;
+    font-weight: 300;
+ }
+ .btn-bordered:hover,
+ .btn-bordered:active,
+ .btn-bordered:focus,
+ .btn-bordered:visited {
+    outline: none;
+    background: #FFF;
+    color: #8b2742;
  }
 /*
  * Hide only visually, but have it available for screen readers:
@@ -366,6 +444,7 @@ a:visited {
         top: 20px;
     }
     .navbar-header {
+        position: relative;
         width: 100%;
     }
     .navbar-collapse.collapse {
@@ -387,6 +466,12 @@ a:visited {
     }
     .navbar-brand h1 {
         margin: 0;
+    }
+    .main-nav .navbar-brand {
+        width: 76px;
+    }
+    .main-nav.scroll .navbar-brand {
+        width: 50px;    
     }
     .navbar-toggle .icon-bar {
         display: block;
@@ -438,9 +523,10 @@ a:visited {
     overflow: visible;
     cursor: pointer;
     outline: none;
-    position: relative;
+    position: absolute;
     float: right;
-    top: 20px;
+    top: 50%;
+    margin-top: -17px;
     right: 0;
     z-index: 600;
     transition-property: opacity, -webkit-filter;
@@ -536,7 +622,7 @@ a:visited {
     background: #00000080;
 }
 .hero .fullsize img {
-    margin-top: 50%;
+    margin-top: 44%;
     transform: translateY(-50%);
 }
 /*---fin hero---*/
@@ -567,27 +653,143 @@ a:visited {
 /*========FIN QUOTES======*/
 
 
+/*========rREFERENCIAS======*/
+#referencias .paragraph-1 {
+    margin-top: 50px;
+}
+#referencias ul {
+    margin-top: 100px;
+}
+#referencias ul li a {
+    opacity: .4;
+}
+#referencias ul li a:hover,
+#referencias ul li a:active,
+#referencias ul li a:visited,
+#referencias ul li a:focus{
+    opacity: 1;
+    outline: none;
+}
+
+
+/*========FIN REFERENCIAS======*/
+
+
 /*========PRACTICA======*/
 #practica .practica-listado li {
     display: table;
 }
-#practica .practica-listado li span {
+#practica .practica-listado li a:hover,
+#practica .practica-listado li a:active,
+#practica .practica-listado li a:focus,
+#practica .practica-listado li a:visited {
+    outline:0;
+    color: black;
+}
+#practica .practica-listado li a:hover span:last-of-type,
+#practica .practica-listado li a:active span:last-of-type,
+#practica .practica-listado li a:focus span:last-of-type,
+#practica .practica-listado li a:visited span:last-of-type{
+    padding-left: 10px;
+}
+#practica .practica-listado li a span {
     display: table-cell;
     vertical-align: middle;
 
 }
-#practica .practica-listado li>span:first-of-type {
+#practica .practica-listado li a>span:first-of-type {
     font-size: 40px;
+    font-weight: 300;
     width: 82px;
 }
-#practica .practica-listado li>span:last-of-type {
+#practica .practica-listado li a>span:last-of-type {
+    padding-left: 0px;
     text-transform: uppercase;
 }
 /*========FIN PRACTICA======*/
 
 
 
+/*========SOCIOS======*/
+
+#socios .socios-listado li {
+     display: block|;
+     margin-bottom: 50px;
+     height: 240px;
+ }
+ #socios .bajada {
+    margin-top: 35px;
+ }
+ #socios .socios-listado {
+    margin-top: 70px;
+ }
+ #socios .socios-listado li>span {
+     display: inline-block;
+     vertical-align: middle; 
+ }
+ #socios .socios-listado li>span:first-of-type {
+     max-width: 220px;
+     
+ }
+ #socios .socios-listado li span:first-of-type  span {
+     background-size: cover!important;
+     display: inline-block;
+     width: 220px;
+     height: 220px;
+ 
+ }
+ #socios .socios-listado li>.socio__data {
+     width: calc(100% - 230px);
+     position: relative;;
+     padding-bottom: 30px;
+     padding-left: 30px;
+     padding-right: 35px;
+ }
+ #socios .socios-listado li .socio__data__nombre {
+    font-weight: 500;
+    margin-bottom: 20px;
+ }
+ #socios .socios-listado li .socio__data {
+    height: 220px;
+    max-height: 220px;
+    box-sizing: border-box;
+ }
+ #socios .socios-listado li .socio__data a {
+    position: absolute;
+    color: #1A1A1A;
+    left: 30px;
+    bottom: 0;
+    letter-spacing: 0;
+    
+ }
+ #socios .socios-listado li .socio__data a:hover,
+ #socios .socios-listado li .socio__data a:focus,
+ #socios .socios-listado li .socio__data a:active,
+ #socios .socios-listado li .socio__data a:visited {
+    letter-spacing: .5px;
+    outline: 0;
+    color: #8b2742;
+ }
+ #socios .socios-listado li .socio__data span {
+     display: block;
+ }
+ #socios .modal .socio__modal__img {
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    display: inline-block;
+ }
+ #socios .modal .close {
+    color: #000;
+ }
+/*========FIN SOCIOS======*/
+
+
+
 /*========profesional======*/
+#profesionales .profesional-listado {
+    margin-top: 70px;
+}
 #profesionales .profesional-listado li {
     display: inline-block;
     margin-bottom: 100px;
@@ -655,6 +857,10 @@ a:visited {
     font-size: 12px;
     padding: 0;    
 }
+ .form-control:focus {
+    box-shadow: none;
+    border-bottom: 2px solid black;
+ }
  .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #575858;
 }
@@ -667,9 +873,9 @@ a:visited {
  .form-control:-moz-placeholder { /* Firefox 18- */
   color: #575858;
 }
- textarea.form-control {
+ #contact-form textarea.form-control,
+ #contact-form textarea.form-control:focus {
     border: none;
-
     margin-bottom: 0;
 }
 .divider {
@@ -691,7 +897,7 @@ form button.btn {
     position: absolute;
     display: inline-block;
     bottom: 0;
-    right: 0;
+    right: -1px;
     background: #000;
     color: #FFF;
     border-radius: 0;
@@ -713,6 +919,7 @@ form button.btn:focus {
     font-size: 28px;
     line-height: 33px;
     margin-bottom: 25px;
+    font-weight: 300;
 }
 #contacto .list-unstyled li span {
     position: absolute;
@@ -735,3 +942,40 @@ form button.btn:focus {
 #contacto .list-unstyled li a:visited{
     color: #d03938;
 }
+#cv-form .form-control.invisible {
+    position: absolute;
+}
+#cv-form p {
+    margin-top: 15px;
+    line-height: 10px;
+    
+}
+#cv-form p small {
+    font-size: 9px;   
+    line-height: 9px;
+    font-weight: 350;
+    color: #575858;
+}
+#cv-form label {
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height:  14px;
+}
+#cv-form label span {
+    background: #575858;
+    color: #FFF;
+    font-weight: 300;
+    margin-top: 20px;
+    border-radius: 0;
+    border: 1px solid #575858;
+}
+#cv-form label span:hover,
+#cv-form label span:focus,
+#cv-form label span:active,
+#cv-form label span:visited {
+    background: #FFF;
+    color: #575858;
+
+}
+/*========fin CONTACTO======*/

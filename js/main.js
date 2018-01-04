@@ -20,7 +20,16 @@ var App = function () {
 			        $('.preloader-container').remove();
     			}, 200);		
 		},		
-
+		navScroll: function() {
+			$( window ).scroll(function(){
+				var $cabecera = $('.main-nav');
+				if( $(window).scrollTop() > 20){
+					$cabecera.addClass('scroll');
+				}else{
+					$cabecera.removeClass('scroll');
+				}
+			});
+		},
 		onload: function () {
 			App.preloader();
 		},	
@@ -30,7 +39,7 @@ var App = function () {
 		init: function () {
 			App.hamburger();
 			App.WOW();
-			// App.navActive();
+			App.navScroll();
 		}
 	}
 }();
