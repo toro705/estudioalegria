@@ -12,7 +12,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">    
         <link rel="stylesheet" href="css/animate.css">    
-        <link rel="stylesheet" href="css/bootstrap.min.css">    
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css">     -->
 <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
@@ -29,31 +29,31 @@
         <nav class="main-nav navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <button class="hamburger transition hamburger--efecto visible-xs" type="button"
-                            aria-label="Menu" aria-controls="cabecera-navbar-collapse" data-toggle="collapse" data-target=".js-navbar-cabecera">
-                      <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                      </span>
-                    </button>                    
                     <button class="hamburger transition hamburger--efecto" type="button"
-                            aria-label="Menu" data-toggle="collapse" data-target=".navbar-collapse"">
+                            aria-label="Menu" data-toggle="collapse" data-target=".navbar-collapse">
                       <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                       </span>
                     </button>                    
-                    <a class="navbar-brand transition" href="index.php">
+                    <a class="navbar-brand transition" href="#">
                         <h1><img class="img-responsive" src="img/estudioalegrialogo.png" alt="Estudio Alegría"></h1>
                     </a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#home">Referencias</a></li>
+                        <li><a href="#referencias" data-toggle="collapse" data-target=".navbar-collapse">Referencias</a></li>
                         <!--                        <li ><a href="#soluciones">Nuestras Soluciones</a></li>-->
                         <li >
-                            <a href="#solucionesSeg">Práctica <br> Profesional</a>
+                            <a href="#practica" data-toggle="collapse" data-target=".navbar-collapse">Práctica <br> Profesional</a>
                          </li>
-                        <li ><a href="#precios">Profesionales</a></li>
-                        <li ><a href="#precios">Contacto</a></li>
+                        <li ><a href="#profesionales" data-toggle="collapse" data-target=".navbar-collapse">Profesionales</a></li>
+                        <li ><a href="#contacto" data-toggle="collapse" data-target=".navbar-collapse">Contacto</a></li>
+                        <li ><form method="POST" action="index.php">
+                            <input type="hidden"  value="en" name="lang">
+                            <button type="submit" value="en"><small>English</small></button>
+                            </form>
+                        </li>
+
                     </ul>
                     <div class="clearfix">  </div>
                 </div>
@@ -64,7 +64,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 text-center">
-                                <img class="img-responsive" src="img/estudioalegrialogolg.png">>
+                                <img src="img/estudioalegrialogolg.png" class="img-responsive wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms" />
                             </div>
                         </div>
                     </div>
@@ -73,13 +73,13 @@
         <section id="principios" class="content bg-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                         <hr class="c-1">
                         <h2 class="color-1 h1">Nuestros <br><b>Principios</b></h2>
                         <p class="color-1 paragraph-1">Desde su fundación por el Dr. Héctor Alegria en el año 1976, el Estudio Alegria, Buey
                         Fernández, Fissore & Montemerlo se ha destacado por su excelencia e innovación en el asesoramiento legal en el campo del derecho empresario, especializándose en asesoramiento legal complejo.</p>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 hidden-xs wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="500ms">
                         <p class="color-1 paragraph-2">Nuestra misión es trabajar para que nuestros clientes alcancen sus objetivos concretos. Nos valemos de nuestra vasta experiencia y conocimientos para enfrentar y resolver complejas situaciones que a diario se presentan dentro de las exigencias impuestas por las negociaciones modernas en un mundo de negocios exigente y competitivo.
                         <br>
                         <br>
@@ -97,7 +97,11 @@
         <section class="content bg-1">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-sm-offset-6">
+                    <div class="col-xs-12 visible-xs">
+                        <p class="paragraph-1 color-2">Hemos consolidado uno de los más prestigiosos estudios argentinos tras haber seguido siempre nuestros principios: profundidad en el análisis del Derecho, calidad en el trabajo profesional y en la relación con los clientes, capacidad de innovación, honestidad, decencia y estricto respeto a las reglas éticas y deontológicas. 
+                        En resumen, la búsqueda de la excelencia en todos los niveles de nuestra actividad.</p>
+                    </div>
+                    <div class="col-sm-6 col-sm-offset-6 wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                         <h3 class="color-3 h2">"Hay que pensar como hombre de acción y actuar como hombre de pensamiento" <br><small class="color-2 thin">Henri Bergson</small></h3>
                     </div>
                 </div>
@@ -106,7 +110,7 @@
         <section class="quote" id="quote1">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 text-center">
+                    <div class="col-xs-12 text-center wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                         <h2>"CUANTO MÁS GRANDE ES EL CAOS 
                         <br><span>MÁS CERCA ESTÁ LA SOLUCIÓN”</span>
                         <br><small>Proverbio Chino</small>
@@ -118,12 +122,12 @@
         <section id="estudio" class="content principios bg-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                         <hr class="c-1">
                         <h2 class="color-1 h1">El <b>Estudio</b></h2>
                         <p class="color-1 paragraph-1">El Estudio Alegria, Buey Fernández, Fissore & Montemerlo, uno de los estudios jurídicos líderes del mercado, cuenta con un equipo interdisciplinario de abogados y contadores públicos de alta especialización, capaz de resolver aquellos asuntos vinculados con las diversas necesidades actuales de los agentes económicos del mercado.</p>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 hidden-xs wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="500ms">
                         <p class="color-1 paragraph-2">Asimismo, posee una vasta red de corresponsales tanto en el interior del país como en los principales mercados internacionales, que asegura a nuestros clientes una amplia cobertura legal.
                         <br>
                         <br>
@@ -139,7 +143,7 @@
         <section class="quote" id="quote2">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 text-center">
+                    <div class="col-xs-12 text-center wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                         <h2>"El verdadero rebelde es aquel 
                         <br><span>que propone alternativas"</span>
                         <br><small>Julián Marías</small>
@@ -149,22 +153,22 @@
             </div>
         </section>
         <section id="referencias" class="content bg-1">
-            <div class="container">
+            <div class="container wow fadeInUp animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                 <div class="row">
                     <div class="col-sm-6">
-                        <hr class="c-4">
-                        <h2 class="color-4 h1"><b>Referencias</b></h2>
+                        <hr class="c-3">
+                        <h2 class="color-3 h1"><b>Referencias</b></h2>
                     </div>
                     <div class="col-sm-6">
                         <p class="color-2 paragraph-1">Revistas especializadas han destacado la tarea de nuestro Estudio y sus profesionales. Citamos a continuación algunas de nuestras distinciones.</p>
                     </div>
                     <div class="col-xs-12">
-                        <ul class="list-unstyled list-inline">
-                            <li class="col-md-2 col-sm-4 col-md-offset-1"><a href="javascript:;" data-toggle="modal" data-target="#referencia1"> <img src="img/ChambersandPartners.png" alt="" class="img-responsive"></a></li>
-                            <li class="col-md-2 col-sm-4"><a href="javascript:;"  data-toggle="modal" data-target="#referencia2"> <img src="img/latin-lawyer-630x147.png" alt="" class="img-responsive"></a></li>
-                            <li class="col-md-2 col-sm-4"><a href="javascript:;"  data-toggle="modal" data-target="#referencia3"> <img src="img/iflr1000-logo.png" alt="" class="img-responsive"></a></li>
-                            <li class="col-md-2 col-sm-4"><a href="javascript:;"  data-toggle="modal" data-target="#referencia4"> <img src="img/TR-PLC.jpg" alt="" class="img-responsive"></a></li>
-                            <li class="col-md-2 col-sm-4"><a href="javascript:;"  data-toggle="modal" data-target="#referencia5"> <img src="img/logo-apertura.jpg" alt="" class="img-responsive"></a></li>
+                        <ul class="list-unstyled list-inline text-center">
+                            <li class="col-xs-6 col-md-2 col-sm-4 col-md-offset-1"><a href="javascript:;" data-toggle="modal" data-target="#referencia1"> <img src="img/ChambersandPartners.png" alt="" class="img-responsive"></a></li>
+                            <li class="col-xs-6 col-md-2 col-sm-4"><a href="javascript:;"  data-toggle="modal" data-target="#referencia2"> <img src="img/latin-lawyer-630x147.png" alt="" class="img-responsive"></a></li>
+                            <li class="col-xs-6 col-md-2 col-sm-4"><a href="javascript:;"  data-toggle="modal" data-target="#referencia3"> <img src="img/iflr1000-logo.png" alt="" class="img-responsive"></a></li>
+                            <li class="col-xs-6 col-md-2 col-sm-4"><a href="javascript:;"  data-toggle="modal" data-target="#referencia4"> <img src="img/TR-PLC.jpg" alt="" class="img-responsive"></a></li>
+                            <li class="col-xs-6 col-md-2 col-sm-4"><a href="javascript:;"  data-toggle="modal" data-target="#referencia5"> <img src="img/logo-apertura.jpg" alt="" class="img-responsive"></a></li>
                         </ul>
                         <!-- MODALES REFERENCIAS -->
 
@@ -402,7 +406,7 @@
         <section class="quote" id="quote3">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 text-center">
+                    <div class="col-xs-12 text-center wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                         <h2>"Hay que pensar como hombre de acción y actuar como 
                         <br><span>hombre de pensamiento"</span>
                         <br><small>Henri Bergson</small>
@@ -414,18 +418,18 @@
         <section id="practica" class="content bg-1">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                         <hr class="c-4">
                         <h2 class="color-4 h1">Práctica <br><b>Profesional</b></h2>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                         <p class="color-2 paragraph-1">Desde su origen, el foco de actividad del Estudio Alegria se centra fundamentalmente en el derecho empresario, siendo mundialmente reconocido en las áreas de reestructuraciones financieras, fusiones y adquisiciones, derecho societario, derecho concursal y de los contratos civiles y comerciales, bancario y de mercado de capitales y en el área contenciosa (ya sea judicial, arbitral o preventiva).
                         <br>
                         <br>
                         En el curso de la vida profesional también se incorporaron al Estudio otras áreas tales como fueron el derecho administrativo económico, el derecho de la integración, de la competencia,
                         </p>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                         <p class="color-2 paragraph-1">
                             infraestructura, energía y recursos naturales y el derecho de las telecomunicaciones.
                             <br>
@@ -436,15 +440,15 @@
                     </div>
                     <div class="col-xs-12">
                         <ul class="list-unstyled list-inline practica-listado">
-                            <li class="col-xs-12 col-sm-6 col-md-4"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica1"><span>01.</span><span class="transition">Reestructuraciones <br>Financieras</span></a></li>
-                            <li class="col-xs-12 col-sm-6 col-md-4"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica2"><span>02.</span><span class="transition">Fusiones y <br>Adquisiciones (M&A)</span></a></li>
-                            <li class="col-xs-12 col-sm-6 col-md-4"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica3"><span>03.</span><span class="transition">Mercado <br>de capitales</span></a></li>
-                            <li class="col-xs-12 col-sm-6 col-md-4"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica4"><span>04.</span><span class="transition">Litigios</span></a></li>
-                            <li class="col-xs-12 col-sm-6 col-md-4"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica5"><span>05.</span><span class="transition">Solucion alternativa <br>de conflictos</span></a></li>
-                            <li class="col-xs-12 col-sm-6 col-md-4"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica6"><span>06.</span><span class="transition">Contratos<br> Civiles</span></a></li>
-                            <li class="col-xs-12 col-sm-6 col-md-4"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica7"><span>07.</span><span class="transition">Derecho <br>Societario</span></a></li>
-                            <li class="col-xs-12 col-sm-6 col-md-4"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica8"><span>08.</span><span class="transition">Derecho bancario <br>y financiamiento</span></a></li>
-                            <li class="col-xs-12 col-sm-6 col-md-4"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica9"><span>09.</span><span class="transition">Derecho <br>administrativo</span></a></li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica1"><span>01.</span><span class="transition">Reestructuraciones <br>Financieras</span></a></li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="400ms"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica2"><span>02.</span><span class="transition">Fusiones y <br>Adquisiciones (M&A)</span></a></li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="500ms"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica3"><span>03.</span><span class="transition">Mercado <br>de capitales</span></a></li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="600ms"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica4"><span>04.</span><span class="transition">Litigios</span></a></li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="700ms"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica5"><span>05.</span><span class="transition">Solucion alternativa <br>de conflictos</span></a></li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="800ms"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica6"><span>06.</span><span class="transition">Contratos<br> Civiles</span></a></li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="900ms"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica7"><span>07.</span><span class="transition">Derecho <br>Societario</span></a></li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="1000ms"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica8"><span>08.</span><span class="transition">Derecho bancario <br>y financiamiento</span></a></li>
+                            <li class="col-xs-12 col-sm-6 col-md-4 wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="1100ms"><a class="color-4" href="javascript:;" data-toggle="modal" data-target="#practica9"><span>09.</span><span class="transition">Derecho <br>administrativo</span></a></li>
                         </ul>
                     </div>
                     <!-- MODALES PRACTICAS -->
@@ -833,7 +837,7 @@
         <section class="quote" id="quote4">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 text-center">
+                    <div class="col-xs-12 text-center wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                         <h2>"La sabiduría es la 
                         <br><span>hija de la experiencia"</span>
                         <br><small>Leonardo Da Vinci</small>
@@ -845,19 +849,21 @@
         <section id="socios" class="content bg-1">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 wow fadeInUp animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                         <hr class="c-4">
                         <h2 class="color-4 h1"><b>Socios</b></h2>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 wow fadeInUp animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                         <p class="color-2 bajada">Nuestro equipo interdisciplinario formado por abogados y contadores públicos y el gran compromiso de los socios en los asuntos que se nos encomiendan distinguen nuestra práctica profesional.</p>
                     </div>
                     <div class="col-sm-12">
                         <div class="row">
                             <ul class="list-unstyled list-inline socios-listado">
-                                <li class="col-xs-12 col-sm-6 color-2 socio">
+                                <li class="col-xs-12 col-sm-6 color-2 socio wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                                     <span class="socio__img">
-                                        <span style="background: url('img/170731-Estudio Alegria-0023-b.JPG')"></span>
+                                        <p class="color-3 visible-xs h2 text-left">Héctor Alegría</p>
+                                        <span style="background-image: url('img/170731-Estudio Alegria-0023-b.jpg')"></span>
+                                        <a href="javascript:;" class="text-left color-2 visible-xs" data-toggle="modal" data-target="#socio1">+ INFO</a>
                                         
                                     </span>
                                     <span class="socio__data">
@@ -868,12 +874,15 @@
                                             <br>
                                             Estudió Derecho en la Universidad de Buenos Aires, Argentina, donde se graduó en 1957. Obtuvo su Doctorado en Derecho y Ciencias Sociales en la misma Universidad. Su tesis doctoral, “El Aval”, obtuvo la máxima calificación (sobresaliente), otorgándosele por la misma el “Premio Facultad” (1971). 
                                         </span>
-                                       <a href="javascript:;" data-toggle="modal" data-target="#socio1">+ INFO</a>
+                                        <a href="javascript:;" data-toggle="modal" data-target="#socio1">+ INFO</a>
                                     </span>
                                 </li>
-                                <li class="col-xs-12 col-sm-6 color-2 socio">
+                                <li class="col-xs-12 col-sm-6 color-2 socio wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="500ms">
                                     <span class="socio__img">
-                                        <span style="background: url('img/Javier_Alegria_04_med-res.JPG')"></span>
+                                        <p class="color-3 visible-xs h2 text-left">Javier Alegría</p>
+                                        <span style="background-image: url('img/Javier_Alegria_04_med-res.jpg')"></span>
+                                        <a href="javascript:;" class="text-left color-2 visible-xs" data-toggle="modal" data-target="#socio2">+ INFO</a>
+
                                         
                                     </span>
                                     <span class="socio__data">
@@ -886,9 +895,12 @@
                                        <a href="javascript:;" data-toggle="modal" data-target="#socio2">+ INFO</a>
                                     </span>
                                 </li>
-                                <li class="col-xs-12 col-sm-6 color-2 socio">
+                                <li class="col-xs-12 col-sm-6 color-2 socio wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                                     <span class="socio__img">
-                                        <span style="background: url('img/Pablo_Buey_Fernandez_01_med-res.JPG')"></span>
+                                        <p class="color-3 visible-xs h2 text-left">Pablo Buey Fernández</p>
+                                        <span style="background-image: url('img/Pablo_Buey_Fernandez_01_med-res.jpg')"></span>
+                                        <a href="javascript:;" class="text-left color-2 visible-xs" data-toggle="modal" data-target="#socio3">+ INFO</a>
+
                                         
                                     </span>
                                     <span class="socio__data">
@@ -901,9 +913,12 @@
                                        <a href="javascript:;" data-toggle="modal" data-target="#socio3">+ INFO</a>
                                     </span>
                                 </li>
-                                <li class="col-xs-12 col-sm-6 color-2 socio">
+                                <li class="col-xs-12 col-sm-6 color-2 socio wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="500ms">
                                     <span class="socio__img">
-                                        <span style="background: url('img/Gabriel_Fissore_07_med-res.jpg')"></span>
+                                        <p class="color-3 visible-xs h2 text-left">Gabriel H. Fissorea</p>
+                                        <span style="background-image: url('img/Gabriel_Fissore_07_med-res.jpg')"></span>
+                                        <a href="javascript:;" class="text-left color-2 visible-xs" data-toggle="modal" data-target="#socio4">+ INFO</a>
+
                                         
                                     </span>
                                     <span class="socio__data">
@@ -915,9 +930,12 @@
                                        <a href="javascript:;" data-toggle="modal" data-target="#socio4">+ INFO</a>
                                     </span>
                                 </li>
-                                <li class="col-xs-12 col-sm-6 color-2 socio">
+                                <li class="col-xs-12 col-sm-6 color-2 socio wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                                     <span class="socio__img">
-                                        <span style="background: url('img/Miguel_Montemerlo_06_med-res.JPG')"></span>
+                                        <p class="color-3 visible-xs h2 text-left">Miguel Montemerlo</p>
+                                        <span style="background-image: url('img/Miguel_Montemerlo_06_med-res.jpg')"></span>
+                                        <a href="javascript:;" class="text-left color-2 visible-xs" data-toggle="modal" data-target="#socio5">+ INFO</a>
+
                                         
                                     </span>
                                     <span class="socio__data">
@@ -932,6 +950,7 @@
                             </ul>
                             
                         </div>
+                        <!--INICIO MODALES SOCIOS -->
                         <div class="modal fade" id="socio1" tabindex="-1" role="dialog" aria-labelledby="Héctor Alegría">
                           <div class="modal-dialog fullsize" role="document">
                             <div class="modal-content fullsize bg-1">
@@ -944,7 +963,7 @@
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-6">
-                                                <span class="socio__modal__img" style="background-image: url('img/170731-Estudio Alegria-0023-b.JPG');"></span>
+                                                <span class="socio__modal__img" style="background-image: url('img/170731-Estudio Alegria-0023-b.jpg');"></span>
                                                 <p class="paragraph-2 color-3"><b>Idiomas: español, italiano, comprensión de francés e inglés.</b></p>
                                             </div>
                                             <div class="col-sm-6">
@@ -997,7 +1016,7 @@
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-6">
-                                                <span class="socio__modal__img" style="background-image: url('img/Javier_Alegria_04_med-res.JPG');"></span>
+                                                <span class="socio__modal__img" style="background-image: url('img/Javier_Alegria_04_med-res.jpg');"></span>
                                                 <p class="paragraph-2 color-3"><b>Idiomas: español, ingles, comprensión de francés y portugués.</b></p>
                                             </div>
                                             <div class="col-sm-6">
@@ -1043,7 +1062,7 @@
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-6">
-                                                <span class="socio__modal__img" style="background-image: url('img/Pablo_Buey_Fernandez_01_med-res.JPG');"></span>
+                                                <span class="socio__modal__img" style="background-image: url('img/Pablo_Buey_Fernandez_01_med-res.jpg');"></span>
                                                 <p class="paragraph-2 color-3"><b>Idiomas: español e ingles.</b></p>
                                             </div>
                                             <div class="col-sm-6">
@@ -1089,7 +1108,7 @@
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-6">
-                                                <span class="socio__modal__img" style="background-image: url('img/Gabriel_Fissore_07_med-res.JPG');"></span>
+                                                <span class="socio__modal__img" style="background-image: url('img/Gabriel_Fissore_07_med-res.jpg');"></span>
                                                 <p class="paragraph-2 color-3"><b>Idiomas: español e ingles.</b></p>
                                             </div>
                                             <div class="col-sm-6">
@@ -1137,7 +1156,7 @@
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-6">
-                                                <span class="socio__modal__img" style="background-image: url('img/Miguel_Montemerlo_06_med-res.JPG');"></span>
+                                                <span class="socio__modal__img" style="background-image: url('img/Miguel_Montemerlo_06_med-res.jpg');"></span>
                                                 <p class="paragraph-2 color-3"><b>Idiomas: español e ingles.</b></p>
                                             </div>
                                             <div class="col-sm-6">
@@ -1162,7 +1181,9 @@
                               </div>
                             </div>
                           </div>
-                        </div>  <!-- end modal -->                                              
+                        </div>  <!-- end modal -->    
+                        <!--FIN MODALES SOCIOS -->
+
                     </div>
                 </div>
             </div>
@@ -1170,16 +1191,16 @@
         <section id="profesionales" class="bg-2 content">   
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-12 wow fadeInUp animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                         <hr class="c-1">
                         <h2 class="color-1 h1"><b>Profesionales</b></h2>
                     </div>
                     <div class="col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0">
                         <div class="row">
                             <ul class="list-unstyled list-inline profesional-listado">
-                                <li class="col-xs-12 col-sm-4 color-2 profesional">
+                                <li class="col-xs-6  col-sm-4 color-2 profesional wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                                     <span class="profesional__img">
-                                        <span style="background: url('img/Tristan_Gonzalez_Correas_02_med-res.JPG')"></span>
+                                        <span style="background-image: url('img/Tristan_Gonzalez_Correas_02_med-res.jpg')"></span>
                                         
                                     </span>
                                     <span class="profesional__data">
@@ -1191,10 +1212,9 @@
                                        <a href="javascript:;" data-toggle="modal" data-target="#profesional1">+ INFO</a>
                                     </span>
                                 </li>
-  
-                                <li class="col-xs-12 col-sm-4 color-2 profesional">
+                                <li class="col-xs-6  col-sm-4 color-2 profesional wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="500ms">
                                     <span class="profesional__img">
-                                        <span style="background: url('img/Tomas_Hutchinson_01_med-res.JPG')"></span>
+                                        <span style="background-image: url('img/Tomas_Hutchinson_01_med-res.jpg')"></span>
                                         
                                     </span>
                                     <span class="profesional__data">
@@ -1206,10 +1226,9 @@
                                        <a href="javascript:;" data-toggle="modal" data-target="#profesional2">+ INFO</a>
                                     </span>
                                 </li>
-  
-                                <li class="col-xs-12 col-sm-4 color-2 profesional">
+                                <li class="col-xs-6  col-sm-4 color-2 profesional wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="700ms">
                                     <span class="profesional__img">
-                                        <span style="background: url('img/Rodolfo_Romani_02_med-res.JPG')"></span>
+                                        <span style="background-image: url('img/Rodolfo_Romani_02_med-res.jpg')"></span>
                                         
                                     </span>
                                     <span class="profesional__data">
@@ -1221,9 +1240,9 @@
                                        <a href="javascript:;" data-toggle="modal" data-target="#profesional3">+ INFO</a>
                                     </span>
                                 </li>
-                                <li class="col-xs-12 col-sm-4 color-2 profesional">
+                                <li class="col-xs-6  col-sm-4 color-2 profesional wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                                     <span class="profesional__img">
-                                        <span style="background: url('img/170731-Estudio Alegria-0011-b.JPG')"></span>
+                                        <span style="background-image: url('img/170731-Estudio Alegria-0011-b.jpg')"></span>
                                         
                                     </span>
                                     <span class="profesional__data">
@@ -1235,9 +1254,9 @@
                                        <a href="javascript:;" data-toggle="modal" data-target="#profesional4">+ INFO</a>
                                     </span>
                                 </li>
-                                <li class="col-xs-12 col-sm-4 color-2 profesional">
+                                <li class="col-xs-6  col-sm-4 color-2 profesional wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="500ms">
                                     <span class="profesional__img">
-                                        <span style="background: url('img/Leonardo_Lucas_03_med-res.JPG')"></span>
+                                        <span style="background-image: url('img/Leonardo_Lucas_03_med-res.jpg')"></span>
                                         
                                     </span>
                                     <span class="profesional__data">
@@ -1249,9 +1268,9 @@
                                        <a href="javascript:;" data-toggle="modal" data-target="#profesional5">+ INFO</a>
                                     </span>
                                 </li>
-                                <li class="col-xs-12 col-sm-4 color-2 profesional">
+                                <li class="col-xs-6  col-sm-4 color-2 profesional wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="700ms">
                                     <span class="profesional__img">
-                                        <span style="background: url('img/Pablo_Anderson_02_med-res.JPG')"></span>
+                                        <span style="background-image: url('img/Pablo_Anderson_02_med-res.jpg')"></span>
                                         
                                     </span>
                                     <span class="profesional__data">
@@ -1263,9 +1282,9 @@
                                        <a href="javascript:;" data-toggle="modal" data-target="#profesional6">+ INFO</a>
                                     </span>
                                 </li>
-                                <li class="col-xs-12 col-sm-4 color-2 profesional">
+                                <li class="col-xs-6  col-sm-4 color-2 profesional wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                                     <span class="profesional__img">
-                                        <span style="background: url('img/Santiago_Courreges_02_med-res.JPG')"></span>
+                                        <span style="background-image: url('img/Santiago_Courreges_02_med-res.jpg')"></span>
                                         
                                     </span>
                                     <span class="profesional__data">
@@ -1277,9 +1296,9 @@
                                        <a href="javascript:;" data-toggle="modal" data-target="#profesional7">+ INFO</a>
                                     </span>
                                 </li>
-                                <li class="col-xs-12 col-sm-4 color-2 profesional">
+                                <li class="col-xs-6  col-sm-4 color-2 profesional wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="500ms">
                                     <span class="profesional__img">
-                                        <span style="background: url('img/Fernando_Biscotti_01_med-res.JPG')"></span>
+                                        <span style="background-image: url('img/Fernando_Biscotti_01_med-res.jpg')"></span>
                                         
                                     </span>
                                     <span class="profesional__data">
@@ -1293,439 +1312,336 @@
                                 </li>
   
                             </ul>
+                            <!--INICIO MODALES PROFESIONALES -->
+
+                            <div class="modal fade" id="profesional1" tabindex="-1" role="dialog" aria-labelledby="Tristán Gonzáles Correas">
+                              <div class="modal-dialog fullsize" role="document">
+                                <div class="modal-content fullsize bg-1">
+                                  <div class="modal-header">
+                                    <div class="container">
+                                        <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <span class="socio__modal__img" style="background-image: url('img/Tristan_Gonzalez_Correas_02_med-res.jpg');"></span>
+                                                    <p class="paragraph-2 color-3"><b>Idiomas: español e inglés.</b></p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="paragraph-2 color-2">
+                                                    El Dr. González Correas está vinculado al Estudio como abogado Of-Counsel desde el año 1996 y su actividad se concentra en Mercado de Capitales, Derecho Societario, Derecho Bancario, Fusiones y Adquisiciones y Contratos Civiles y Comerciales.  
+                                                    <br><br>
+                                                    Fue Director Titular de Socma Americana S.A., Sideco Americana S.A., Sevel Argentina S.A., Director Suplente de Alpargatas S.A.I.C. y Director Titular del Banco Francés del Río de la Plata S.A. Ha sido director del área de legales de la mayoría de ellos.  
+                                                    <br><br>
+                                                    Obtuvo el título de abogado en la Facultad de Derecho y Ciencias Sociales de la Universidad de Buenos Aires en 1965. 
+                                                    <br><br>
+                                                    Ha participado en numerosos cursos y seminarios, entre los que se destacan el Curso Intensivo para Ejecutivos (C.I.P.E.) realizado en I.D.E.A. en el año 1977 y el Stanford Executive Program, realizado en la Universidad de Stanford de Estados Unidos en el año 1988. Ha dictado diversos cursos y seminarios llevados a cabo en el país y en el exterior y fue autor de varios artículos sobre temas legales empresarios.  
+                                                    <br><br>
+                                                    Es Consejero Honorario de la Cámara de Sociedades Anónimas, Ex-Vocal de la Mesa Directiva y del Consejo Directivo de la Bolsa de Comercio de Buenos Aires -donde también integró la Comisión de Títulos; Ex-Presidente del Club de Abogados de Empresa y ex -miembro de la Licensing  Executive Society (Capítulo Argentino). Fue Director de la División Jurídica de I.D.E.A. (1984-1986). Integró el Consejo de Administración de la Universidad Argentina de la Empresa (UADE). 
+                                                    <br><br>
+                                                     Es miembro del Colegio Público de Abogados de la Capital Federal.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>                                                              
+                                  </div>
+                                </div>
+                              </div>
+                            </div>  <!-- end modal -->                        
+                            <div class="modal fade" id="profesional2" tabindex="-1" role="dialog" aria-labelledby="Tomás Hutchinson">
+                              <div class="modal-dialog fullsize" role="document">
+                                <div class="modal-content fullsize bg-1">
+                                  <div class="modal-header">
+                                    <div class="container">
+                                        <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <span class="socio__modal__img" style="background-image: url('img/Tomas_Hutchinson_01_med-res.jpg');"></span>
+                                                    <p class="paragraph-2 color-3"><b>Idiomas: español, italiano, comprensión de francés e inglés.</b></p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="paragraph-2 color-2">
+
+                                                    Es socio fundador del Estudio Alegria, Buey Fernández, Fissore & Montemerlo.
+
+                                                    <br><br>
+                                                    Estudió Derecho en la Universidad de Buenos Aires, Argentina, donde se graduó en 1957. Obtuvo su Doctorado en Derecho y Ciencias Sociales en la misma Universidad. Su tesis doctoral, “El Aval”, obtuvo la máxima calificación (sobresaliente), otorgándosele por la misma el “Premio Facultad” (1971). En 1969 fue galardonado con el premio de “Joven Sobresaliente” otorgado por la Cámara Junior.
+
+                                                    <br><br>
+                                                    Fue Juez Nacional en lo Comercial (1963-1969), primer Presidente de la Comisión Nacional de Valores (1969-1975) y Conjuez de la Corte Suprema de Justicia de la Nación (1995-1999). 
+
+                                                    <br><br>
+                                                    Es Académico de número de la Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires; Académico en la Academia de Mercado de Capitales (Argentina), Académico en la Academia de Derecho Bursátil y de la Actividad Financiera de México, Director del Instituto de Derecho Empresarial de la Academia Nacional de Derecho y Ciencias Sociales y Director del Instituto de Derecho Comercial del Colegio Público de Abogados. Ha recibido diversos premios como, por ejemplo, el Premio Konex en el rubro “Humanidades” (2006), “Premio Justicia 2009”, otorgado por la Universidad de Ciencias Empresariales y Sociales (UCES), por su “Descollante Aporte al Derecho Latinoamericano”, otorgado por la Asociación Iberoamericana de Derecho Privado (2012), y premio Konex de Platino 2016, rubro “Humanidades”, “Derecho Comercial” (2016). Fue elegido por la Revista especializada Chambers and Partners como uno de los 100 abogados más importantes del mundo (Londres, Inglaterra, año 2000).
+
+                                                    <br><br>
+                                                    Fue miembro de diferentes comisiones de reformas al Código Civil y Comercial: Miembro de las Comisiones de Unificación y Reformas al Código Civil y de Comercio (de 1987 y de 1992) que elaboró los Anteproyectos de Unificación de la Legislación Civil y Comercial; Miembro de la Comisión encargada de la redacción de un nuevo Código Civil (1995), que elaboró el “Proyecto de Código Civil” (unificado con el de Comercio), 1998; Coautor del Proyecto de Ley de Concursos (luego dictada bajo el número 19.551) y su reforma (ley 22.917); Autor del Proyecto de Ley de Leasing (luego ley 25.248) y de la Ley de Caja de Valores (ley 20.643), entre otros proyectos legislativos.
+
+                                                    <br><br>
+                                                    Es Profesor Emérito de la Universidad de Buenos Aires (desde 2000), habiendo sido Profesor Titular de Derecho Comercial en la Facultad de Derecho de la Universidad de Buenos Aires (desde 1982) y Profesor Titular de Derecho Económico en la Facultad de Ciencias Económicas de esa Universidad (1969-2002). 
+
+                                                    <br><br>
+                                                    Autor de diversas obras: “Sociedades Anónimas”, “El Aval”, “Algunas cuestiones de Derecho Concursal”, “Actuación del Síndico en Convocatorias y Quiebras”, “Las Sociedades Anónimas en los Países de la Alalc”, “Concursos”, libro en conjunto sobre la obra de Piero Pajardi, “La Ley de Convertibilidad”, en colaboración con Julio César Rivera, y numerosos (más de cien) trabajos en revistas del país y del exterior y ponencias escritas en Congresos y Jornadas. 
+
+                                                    <br><br>
+                                                    Es director de la “Revista de Derecho Privado y Comunitario”, de la Revista “Derecho Comercial y de las Obligaciones”, del “Suplemento Especial de Concursos y Quiebras” editado por La Ley (trimestral). Ha dictado más de setecientas conferencias y asistido a Congresos y Jornadas en el país y el exterior.
+
+                                                    <br><br>
+                                                    Es Miembro de diversos tribunales arbitrales (permanentes y ad-hoc) y ha actuado como consultor internacional.
+
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>                                                              
+                                  </div>
+                                </div>
+                              </div>
+                            </div>  <!-- end modal -->                        
+                            <div class="modal fade" id="profesional3" tabindex="-1" role="dialog" aria-labelledby="Rodolfo Romani">
+                              <div class="modal-dialog fullsize" role="document">
+                                <div class="modal-content fullsize bg-1">
+                                  <div class="modal-header">
+                                    <div class="container">
+                                        <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <span class="socio__modal__img" style="background-image: url('img/Rodolfo_Romani_02_med-res.jpg');"></span>
+                                                    <p class="paragraph-2 color-3"><b>Idiomas: español e inglés.</b></p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="paragraph-2 color-2">
+
+                                                    Rodolfo A. Romani actualmente se desempeña como Consultor en Cuestiones Económicas y Contables relacionadas con Reestructuraciones Financieras, Fusiones y Adquisiciones, Litigios, Acuerdos Preventivos Extrajudiciales y Concursos y Quiebras.
+                                                    <br><br>
+                                                    Hasta su incorporación al Estudio actuó en la actividad empresarial privada como gerente, director y asesor de importantes compañías nacionales y extranjeras, en las especialidades de Finanzas y Control de Gestión.
+                                                    <br><br>
+                                                    El Dr. Romani es egresado de la Facultad de Ciencias Económicas de la Universidad de Buenos Aires, donde obtuvo el título de Contador Público en 1973. 
+                                                    <br><br>
+                                                    Participó en numerosos cursos y seminarios sobre Finanzas, Bancos, Comercio Exterior y Derecho Concursal.  
+                                                    <br><br>
+                                                    Es profesor invitado en la Maestría en Derecho Empresarial de la UADE, en la materia Reorganización Corporativa y de Pasivos Empresarios.
+                                                    <br><br>
+                                                    Es miembro del Consejo Profesional de Ciencias Económicas de la Ciudad Autónoma de Buenos Aires.
+
+
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>                                                              
+                                  </div>
+                                </div>
+                              </div>
+                            </div>  <!-- end modal -->                        
+                            <div class="modal fade" id="profesional4" tabindex="-1" role="dialog" aria-labelledby="Héctor Alegría">
+                              <div class="modal-dialog fullsize" role="document">
+                                <div class="modal-content fullsize bg-1">
+                                  <div class="modal-header">
+                                    <div class="container">
+                                        <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <span class="socio__modal__img" style="background-image: url('img/170731-Estudio Alegria-0011-b.jpg');"></span>
+                                                    <p class="paragraph-2 color-3"><b>Idiomas: español, inglés y conocimientos de francés.</b></p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="paragraph-2 color-2">
+
+                                                    El Dr. De Apellaniz está vinculado al Estudio como abogado Of-Counsel desde 2017. Se especializa en Asesoramiento  en Contratos de Distribución Comercial y Reestructuración de Sistemas de Distribución y Logística de Empresas, en Reestructuración Societaria y de Deudas, en temas inmobiliarios, y en Concursos, Quiebras, Litigios y Mediación.
+                                                    <br><br>
+                                                    Trabajó en Alto Paraná S.A., y fue asociado en el estudio “Cárdenas, Hope & Otero Monsegur” (1981-1987). Desde septiembre de 1987 a abril de 1990, fue miembro del Estudio. Durante los años 1990 a 1997, fundó su propio estudio y fue designado por el Ministerio de Economía de la Nación como síndico oficial de “Grupo Greco”. Se desempeñó como Gerente del Departamento de Legales en “Cervecería y Maltería Quilmes” desde 2000 a 2010. En 2014 trabajó en Danone Argentina S.A. 
+                                                    <br><br>
+                                                    Obtuvo el título de abogado en la Universidad Católica Argentina en 1979. 
+                                                    <br><br>
+                                                    Es profesor de Derecho Civil IV (Derechos Reales), en la Universidad del Salvador (USAL), en la cátedra del Dr. Gabriel H. Fissore.
+                                                    <br><br>
+                                                    Es miembro del Colegio Público de Abogados de la Capital Federal y  del Colegio de Abogados de la Ciudad de La Plata.
+
+
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>                                                              
+                                  </div>
+                                </div>
+                              </div>
+                            </div>  <!-- end modal -->                        
+                            <div class="modal fade" id="profesional5" tabindex="-1" role="dialog" aria-labelledby="Leonardo Lucas">
+                              <div class="modal-dialog fullsize" role="document">
+                                <div class="modal-content fullsize bg-1">
+                                  <div class="modal-header">
+                                    <div class="container">
+                                        <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <span class="socio__modal__img" style="background-image: url('img/Leonardo_Lucas_03_med-res.jpg');"></span>
+                                                    <p class="paragraph-2 color-3"><b>Idiomas: español e inglés.</b></p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="paragraph-2 color-2">
+
+                                                    El Dr. Leonardo Oscar Lucas es Asociado del Estudio desde el año 2005 y se especializa en Reestructuraciones Financieras y Societarias, Concursos y Quiebras, Litigios, Arbitrajes, Solución Alternativa de Conflictos y Contratos Civiles y Comerciales.
+                                                    <br><br>
+                                                    Trabajó en el estudio Marval, O´Farrell & Mairal (2003-2005), en el estudio Jurídico Cartell & Murray (1997-2003)  y en el Poder Judicial de la Nación  (Juzgado Nacional de Primera Instancia en lo Comercial Nº 13 y Juzgado Nacional de Primera Instancia en lo Civil Nº 22) (1995-1996).
+                                                    <br><br>
+                                                    Se graduó de Abogado en la Facultad de Derecho de la Universidad Católica Argentina (UCA) en 1999. En 2015 y 2016 cursó la Maestría en Derecho Empresario de la Facultad de Derecho de la Universidad Austral.
+                                                    <br><br>
+                                                    Realizó cursos de postgrado en Contratos Empresariales Modernos y en Instrumentos y Estrategias Innovadoras en la Gestión Empresaria - El Fideicomiso- en la Universidad Católica Argentina. 
+                                                    <br><br>
+                                                    Fue Ayudante de Cátedra en Concursos y Quiebras en la carrera de grado como en el Master en Derecho Empresarial y ha dictado clases en - Reorganización Corporativa y de Pasivos Empresarios, en la Universidad Argentina de la Empresa – (UADE). Se desempeñó como Auxiliar docente en la cátedra Instituciones de Derecho Comercial III, dictada en la Facultad de Ciencias Sociales y Económicas de la UCAEs miembro del Colegio Público de Abogados de la Capital Federal.
+
+
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>                                                              
+                                  </div>
+                                </div>
+                              </div>
+                            </div>  <!-- end modal -->                        
+                            <div class="modal fade" id="profesional6" tabindex="-1" role="dialog" aria-labelledby="Pablo Anderson">
+                              <div class="modal-dialog fullsize" role="document">
+                                <div class="modal-content fullsize bg-1">
+                                  <div class="modal-header">
+                                    <div class="container">
+                                        <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <span class="socio__modal__img" style="background-image: url('img/Pablo_Anderson_02_med-res.jpg');"></span>
+                                                    <p class="paragraph-2 color-3"><b>Idiomas: español e inglés.</b></p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="paragraph-2 color-2">
+
+                                                    Es miembro asociado del Estudio desde 2000. Se especializa en Reestructuraciones Financieras y Societarias, Concursos y Quiebras, Derecho Societario, Derecho Bancario, Contratos Civiles y Comerciales y Litigios y Arbitrajes.  
+                                                    <br><br>
+                                                    Previamente trabajó como abogado en el Estudio Jurídico Anderson & Sosa (1998-2000).
+                                                    <br><br>
+                                                    Obtuvo el título de abogado en la Universidad de Buenos Aires en 1996. Es egresado de la Maestría en Derecho Empresarial en la Facultad de Derecho de la Universidad Austral (2011), siendo su tesina “Reflexiones sobre El Contrato de Fideicomiso y la Insolvencia”, calificada con 10 Sobresaliente.
+                                                    <br><br>
+                                                    
+                                                    Desde el año 2013 es coordinador de la materia “Crisis, Insolvencia y Reestructuración Empresaria” de la Maestría en Derecho Empresario de la Facultad de Derecho de la Universidad Austral donde también es Profesor invitado. También en la materia “Reestructuración Corporativa de Pasivos Empresarios” de la misma Maestría. 
+                                                    <br><br>
+                                                    Publicó artículos en la Revista Argentina de Derecho de la Empresa, en la Revista de Derecho Comercial y en la Revista Jurídica La Ley.
+                                                    <br><br>
+                                                    Participó desde el año 1997 a la fecha en innumerables Cursos, Seminarios y Congresos. En Agosto del 2012 fue expositor en la reunión ordinaria del Instituto de Derecho Comercial del Colegio Público de Abogados de la Capital Federalsobre la temática “Fideicomiso e Insolvencia de sus partes”.
+                                                    <br><br>
+                                                    Es miembro del Colegio Público de Abogados de la Capital Federal  y del Colegio de Abogados de Lomas de Zamora.
+
+
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>                                                              
+                                  </div>
+                                </div>
+                              </div>
+                            </div>  <!-- end modal -->                        
+                            <div class="modal fade" id="profesional7" tabindex="-1" role="dialog" aria-labelledby="Santiago Courreges">
+                              <div class="modal-dialog fullsize" role="document">
+                                <div class="modal-content fullsize bg-1">
+                                  <div class="modal-header">
+                                    <div class="container">
+                                        <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <span class="socio__modal__img" style="background-image: url('img/Santiago_Courreges_02_med-res.jpg');"></span>
+                                                    <p class="paragraph-2 color-3"><b>Idiomas: español e inglés.</b></p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="paragraph-2 color-2">
+
+                                                    El Dr. Courregeses miembro del estudio desde 2016 y se especializa en Litigios, Derecho Societario, Derecho Energético  y Contratos Civiles y Comerciales.
+                                                    <br><br>
+                                                    Trabajó en el Estudio Bulló Abogados (2014-2016) y en el Estudio Carbó, Castelli & Asociados (2012-2014).
+                                                    <br><br>
+                                                    Se graduó de abogado en la Facultad de Derecho y Ciencias Sociales de la Universidad Nacional de Buenos Aires en el año 2015.
+                                                    <br><br>
+                                                    Desde el año 2016 es profesor adjunto de Derechos Reales en la Facultad de Derecho de la Universidad del Salvador (U.S.A.L.).
+                                                    <br><br>
+                                                    Es miembro del Colegio Público de Abogados de la Capital Federal.
+
+
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>                                                              
+                                  </div>
+                                </div>
+                              </div>
+                            </div>  <!-- end modal -->                        
+                            <div class="modal fade" id="profesional8" tabindex="-1" role="dialog" aria-labelledby="Fernando Biscotti">
+                              <div class="modal-dialog fullsize" role="document">
+                                <div class="modal-content fullsize bg-1">
+                                  <div class="modal-header">
+                                    <div class="container">
+                                        <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                  </div>
+                                  <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <span class="socio__modal__img" style="background-image: url('img/Fernando_Biscotti_01_med-res.jpg');"></span>
+                                                    <p class="paragraph-2 color-3"><b>Idiomas: español e inglés.</b></p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="paragraph-2 color-2">
+
+                                                    El Dr. Biscotti es asociado del Estudio desde 2016. Realiza su práctica en Litigios Comerciales, Civiles y Contencioso Administrativos; Fusiones y Adquisiciones de Empresas y Derecho Corporativo, así como también en Soluciones Alternativas de Conflicto.
+                                                    <br><br>
+                                                    Se graduó como abogado en la Facultad de Derecho y Ciencias Sociales de la Universidad del Museo Social Argentino en 2015. Ese mismo año fue distinguido con el Premio a la Excelencia Académica entregado por el Colegio de Abogados de la Ciudad Autónoma de Buenos Aires.
+                                                    <br><br>
+                                                    Es miembro del Colegio Público de Abogados de la Capital Federal.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>                                                              
+                                  </div>
+                                </div>
+                              </div>
+                            </div>  <!-- end modal -->   
+                            <!--FIN MODALES PROFESIONALES -->
+
                         </div>                  
                     </div>
                 </div>
-                <div class="modal fade" id="profesional1" tabindex="-1" role="dialog" aria-labelledby="Héctor Alegría">
-                  <div class="modal-dialog fullsize" role="document">
-                    <div class="modal-content fullsize bg-1">
-                      <div class="modal-header">
-                        <div class="container">
-                            <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                      </div>
-                      <div class="modal-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6">
-                                        <span class="socio__modal__img" style="background-image: url('img/170731-Estudio Alegria-0023-b.JPG');"></span>
-                                        <p class="paragraph-2 color-3"><b>Idiomas: español, italiano, comprensión de francés e inglés.</b></p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p class="paragraph-2 color-2">
-
-                                        Es socio fundador del Estudio Alegria, Buey Fernández, Fissore & Montemerlo.
-
-                                        <br><br>
-                                        Estudió Derecho en la Universidad de Buenos Aires, Argentina, donde se graduó en 1957. Obtuvo su Doctorado en Derecho y Ciencias Sociales en la misma Universidad. Su tesis doctoral, “El Aval”, obtuvo la máxima calificación (sobresaliente), otorgándosele por la misma el “Premio Facultad” (1971). En 1969 fue galardonado con el premio de “Joven Sobresaliente” otorgado por la Cámara Junior.
-
-                                        <br><br>
-                                        Fue Juez Nacional en lo Comercial (1963-1969), primer Presidente de la Comisión Nacional de Valores (1969-1975) y Conjuez de la Corte Suprema de Justicia de la Nación (1995-1999). 
-
-                                        <br><br>
-                                        Es Académico de número de la Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires; Académico en la Academia de Mercado de Capitales (Argentina), Académico en la Academia de Derecho Bursátil y de la Actividad Financiera de México, Director del Instituto de Derecho Empresarial de la Academia Nacional de Derecho y Ciencias Sociales y Director del Instituto de Derecho Comercial del Colegio Público de Abogados. Ha recibido diversos premios como, por ejemplo, el Premio Konex en el rubro “Humanidades” (2006), “Premio Justicia 2009”, otorgado por la Universidad de Ciencias Empresariales y Sociales (UCES), por su “Descollante Aporte al Derecho Latinoamericano”, otorgado por la Asociación Iberoamericana de Derecho Privado (2012), y premio Konex de Platino 2016, rubro “Humanidades”, “Derecho Comercial” (2016). Fue elegido por la Revista especializada Chambers and Partners como uno de los 100 abogados más importantes del mundo (Londres, Inglaterra, año 2000).
-
-                                        <br><br>
-                                        Fue miembro de diferentes comisiones de reformas al Código Civil y Comercial: Miembro de las Comisiones de Unificación y Reformas al Código Civil y de Comercio (de 1987 y de 1992) que elaboró los Anteproyectos de Unificación de la Legislación Civil y Comercial; Miembro de la Comisión encargada de la redacción de un nuevo Código Civil (1995), que elaboró el “Proyecto de Código Civil” (unificado con el de Comercio), 1998; Coautor del Proyecto de Ley de Concursos (luego dictada bajo el número 19.551) y su reforma (ley 22.917); Autor del Proyecto de Ley de Leasing (luego ley 25.248) y de la Ley de Caja de Valores (ley 20.643), entre otros proyectos legislativos.
-
-                                        <br><br>
-                                        Es Profesor Emérito de la Universidad de Buenos Aires (desde 2000), habiendo sido Profesor Titular de Derecho Comercial en la Facultad de Derecho de la Universidad de Buenos Aires (desde 1982) y Profesor Titular de Derecho Económico en la Facultad de Ciencias Económicas de esa Universidad (1969-2002). 
-
-                                        <br><br>
-                                        Autor de diversas obras: “Sociedades Anónimas”, “El Aval”, “Algunas cuestiones de Derecho Concursal”, “Actuación del Síndico en Convocatorias y Quiebras”, “Las Sociedades Anónimas en los Países de la Alalc”, “Concursos”, libro en conjunto sobre la obra de Piero Pajardi, “La Ley de Convertibilidad”, en colaboración con Julio César Rivera, y numerosos (más de cien) trabajos en revistas del país y del exterior y ponencias escritas en Congresos y Jornadas. 
-
-                                        <br><br>
-                                        Es director de la “Revista de Derecho Privado y Comunitario”, de la Revista “Derecho Comercial y de las Obligaciones”, del “Suplemento Especial de Concursos y Quiebras” editado por La Ley (trimestral). Ha dictado más de setecientas conferencias y asistido a Congresos y Jornadas en el país y el exterior.
-
-                                        <br><br>
-                                        Es Miembro de diversos tribunales arbitrales (permanentes y ad-hoc) y ha actuado como consultor internacional.
-
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>                                                              
-                      </div>
-                    </div>
-                  </div>
-                </div>  <!-- end modal -->                        
-                <div class="modal fade" id="profesional" tabindex="-1" role="dialog" aria-labelledby="Héctor Alegría">
-                  <div class="modal-dialog fullsize" role="document">
-                    <div class="modal-content fullsize bg-1">
-                      <div class="modal-header">
-                        <div class="container">
-                            <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                      </div>
-                      <div class="modal-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6">
-                                        <span class="socio__modal__img" style="background-image: url('img/170731-Estudio Alegria-0023-b.JPG');"></span>
-                                        <p class="paragraph-2 color-3"><b>Idiomas: español, italiano, comprensión de francés e inglés.</b></p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p class="paragraph-2 color-2">
-
-                                        Es socio fundador del Estudio Alegria, Buey Fernández, Fissore & Montemerlo.
-
-                                        <br><br>
-                                        Estudió Derecho en la Universidad de Buenos Aires, Argentina, donde se graduó en 1957. Obtuvo su Doctorado en Derecho y Ciencias Sociales en la misma Universidad. Su tesis doctoral, “El Aval”, obtuvo la máxima calificación (sobresaliente), otorgándosele por la misma el “Premio Facultad” (1971). En 1969 fue galardonado con el premio de “Joven Sobresaliente” otorgado por la Cámara Junior.
-
-                                        <br><br>
-                                        Fue Juez Nacional en lo Comercial (1963-1969), primer Presidente de la Comisión Nacional de Valores (1969-1975) y Conjuez de la Corte Suprema de Justicia de la Nación (1995-1999). 
-
-                                        <br><br>
-                                        Es Académico de número de la Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires; Académico en la Academia de Mercado de Capitales (Argentina), Académico en la Academia de Derecho Bursátil y de la Actividad Financiera de México, Director del Instituto de Derecho Empresarial de la Academia Nacional de Derecho y Ciencias Sociales y Director del Instituto de Derecho Comercial del Colegio Público de Abogados. Ha recibido diversos premios como, por ejemplo, el Premio Konex en el rubro “Humanidades” (2006), “Premio Justicia 2009”, otorgado por la Universidad de Ciencias Empresariales y Sociales (UCES), por su “Descollante Aporte al Derecho Latinoamericano”, otorgado por la Asociación Iberoamericana de Derecho Privado (2012), y premio Konex de Platino 2016, rubro “Humanidades”, “Derecho Comercial” (2016). Fue elegido por la Revista especializada Chambers and Partners como uno de los 100 abogados más importantes del mundo (Londres, Inglaterra, año 2000).
-
-                                        <br><br>
-                                        Fue miembro de diferentes comisiones de reformas al Código Civil y Comercial: Miembro de las Comisiones de Unificación y Reformas al Código Civil y de Comercio (de 1987 y de 1992) que elaboró los Anteproyectos de Unificación de la Legislación Civil y Comercial; Miembro de la Comisión encargada de la redacción de un nuevo Código Civil (1995), que elaboró el “Proyecto de Código Civil” (unificado con el de Comercio), 1998; Coautor del Proyecto de Ley de Concursos (luego dictada bajo el número 19.551) y su reforma (ley 22.917); Autor del Proyecto de Ley de Leasing (luego ley 25.248) y de la Ley de Caja de Valores (ley 20.643), entre otros proyectos legislativos.
-
-                                        <br><br>
-                                        Es Profesor Emérito de la Universidad de Buenos Aires (desde 2000), habiendo sido Profesor Titular de Derecho Comercial en la Facultad de Derecho de la Universidad de Buenos Aires (desde 1982) y Profesor Titular de Derecho Económico en la Facultad de Ciencias Económicas de esa Universidad (1969-2002). 
-
-                                        <br><br>
-                                        Autor de diversas obras: “Sociedades Anónimas”, “El Aval”, “Algunas cuestiones de Derecho Concursal”, “Actuación del Síndico en Convocatorias y Quiebras”, “Las Sociedades Anónimas en los Países de la Alalc”, “Concursos”, libro en conjunto sobre la obra de Piero Pajardi, “La Ley de Convertibilidad”, en colaboración con Julio César Rivera, y numerosos (más de cien) trabajos en revistas del país y del exterior y ponencias escritas en Congresos y Jornadas. 
-
-                                        <br><br>
-                                        Es director de la “Revista de Derecho Privado y Comunitario”, de la Revista “Derecho Comercial y de las Obligaciones”, del “Suplemento Especial de Concursos y Quiebras” editado por La Ley (trimestral). Ha dictado más de setecientas conferencias y asistido a Congresos y Jornadas en el país y el exterior.
-
-                                        <br><br>
-                                        Es Miembro de diversos tribunales arbitrales (permanentes y ad-hoc) y ha actuado como consultor internacional.
-
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>                                                              
-                      </div>
-                    </div>
-                  </div>
-                </div>  <!-- end modal -->                        
-                <div class="modal fade" id="profesional" tabindex="-1" role="dialog" aria-labelledby="Héctor Alegría">
-                  <div class="modal-dialog fullsize" role="document">
-                    <div class="modal-content fullsize bg-1">
-                      <div class="modal-header">
-                        <div class="container">
-                            <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                      </div>
-                      <div class="modal-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6">
-                                        <span class="socio__modal__img" style="background-image: url('img/170731-Estudio Alegria-0023-b.JPG');"></span>
-                                        <p class="paragraph-2 color-3"><b>Idiomas: español, italiano, comprensión de francés e inglés.</b></p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p class="paragraph-2 color-2">
-
-                                        Es socio fundador del Estudio Alegria, Buey Fernández, Fissore & Montemerlo.
-
-                                        <br><br>
-                                        Estudió Derecho en la Universidad de Buenos Aires, Argentina, donde se graduó en 1957. Obtuvo su Doctorado en Derecho y Ciencias Sociales en la misma Universidad. Su tesis doctoral, “El Aval”, obtuvo la máxima calificación (sobresaliente), otorgándosele por la misma el “Premio Facultad” (1971). En 1969 fue galardonado con el premio de “Joven Sobresaliente” otorgado por la Cámara Junior.
-
-                                        <br><br>
-                                        Fue Juez Nacional en lo Comercial (1963-1969), primer Presidente de la Comisión Nacional de Valores (1969-1975) y Conjuez de la Corte Suprema de Justicia de la Nación (1995-1999). 
-
-                                        <br><br>
-                                        Es Académico de número de la Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires; Académico en la Academia de Mercado de Capitales (Argentina), Académico en la Academia de Derecho Bursátil y de la Actividad Financiera de México, Director del Instituto de Derecho Empresarial de la Academia Nacional de Derecho y Ciencias Sociales y Director del Instituto de Derecho Comercial del Colegio Público de Abogados. Ha recibido diversos premios como, por ejemplo, el Premio Konex en el rubro “Humanidades” (2006), “Premio Justicia 2009”, otorgado por la Universidad de Ciencias Empresariales y Sociales (UCES), por su “Descollante Aporte al Derecho Latinoamericano”, otorgado por la Asociación Iberoamericana de Derecho Privado (2012), y premio Konex de Platino 2016, rubro “Humanidades”, “Derecho Comercial” (2016). Fue elegido por la Revista especializada Chambers and Partners como uno de los 100 abogados más importantes del mundo (Londres, Inglaterra, año 2000).
-
-                                        <br><br>
-                                        Fue miembro de diferentes comisiones de reformas al Código Civil y Comercial: Miembro de las Comisiones de Unificación y Reformas al Código Civil y de Comercio (de 1987 y de 1992) que elaboró los Anteproyectos de Unificación de la Legislación Civil y Comercial; Miembro de la Comisión encargada de la redacción de un nuevo Código Civil (1995), que elaboró el “Proyecto de Código Civil” (unificado con el de Comercio), 1998; Coautor del Proyecto de Ley de Concursos (luego dictada bajo el número 19.551) y su reforma (ley 22.917); Autor del Proyecto de Ley de Leasing (luego ley 25.248) y de la Ley de Caja de Valores (ley 20.643), entre otros proyectos legislativos.
-
-                                        <br><br>
-                                        Es Profesor Emérito de la Universidad de Buenos Aires (desde 2000), habiendo sido Profesor Titular de Derecho Comercial en la Facultad de Derecho de la Universidad de Buenos Aires (desde 1982) y Profesor Titular de Derecho Económico en la Facultad de Ciencias Económicas de esa Universidad (1969-2002). 
-
-                                        <br><br>
-                                        Autor de diversas obras: “Sociedades Anónimas”, “El Aval”, “Algunas cuestiones de Derecho Concursal”, “Actuación del Síndico en Convocatorias y Quiebras”, “Las Sociedades Anónimas en los Países de la Alalc”, “Concursos”, libro en conjunto sobre la obra de Piero Pajardi, “La Ley de Convertibilidad”, en colaboración con Julio César Rivera, y numerosos (más de cien) trabajos en revistas del país y del exterior y ponencias escritas en Congresos y Jornadas. 
-
-                                        <br><br>
-                                        Es director de la “Revista de Derecho Privado y Comunitario”, de la Revista “Derecho Comercial y de las Obligaciones”, del “Suplemento Especial de Concursos y Quiebras” editado por La Ley (trimestral). Ha dictado más de setecientas conferencias y asistido a Congresos y Jornadas en el país y el exterior.
-
-                                        <br><br>
-                                        Es Miembro de diversos tribunales arbitrales (permanentes y ad-hoc) y ha actuado como consultor internacional.
-
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>                                                              
-                      </div>
-                    </div>
-                  </div>
-                </div>  <!-- end modal -->                        
-                <div class="modal fade" id="profesional" tabindex="-1" role="dialog" aria-labelledby="Héctor Alegría">
-                  <div class="modal-dialog fullsize" role="document">
-                    <div class="modal-content fullsize bg-1">
-                      <div class="modal-header">
-                        <div class="container">
-                            <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                      </div>
-                      <div class="modal-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6">
-                                        <span class="socio__modal__img" style="background-image: url('img/170731-Estudio Alegria-0023-b.JPG');"></span>
-                                        <p class="paragraph-2 color-3"><b>Idiomas: español, italiano, comprensión de francés e inglés.</b></p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p class="paragraph-2 color-2">
-
-                                        Es socio fundador del Estudio Alegria, Buey Fernández, Fissore & Montemerlo.
-
-                                        <br><br>
-                                        Estudió Derecho en la Universidad de Buenos Aires, Argentina, donde se graduó en 1957. Obtuvo su Doctorado en Derecho y Ciencias Sociales en la misma Universidad. Su tesis doctoral, “El Aval”, obtuvo la máxima calificación (sobresaliente), otorgándosele por la misma el “Premio Facultad” (1971). En 1969 fue galardonado con el premio de “Joven Sobresaliente” otorgado por la Cámara Junior.
-
-                                        <br><br>
-                                        Fue Juez Nacional en lo Comercial (1963-1969), primer Presidente de la Comisión Nacional de Valores (1969-1975) y Conjuez de la Corte Suprema de Justicia de la Nación (1995-1999). 
-
-                                        <br><br>
-                                        Es Académico de número de la Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires; Académico en la Academia de Mercado de Capitales (Argentina), Académico en la Academia de Derecho Bursátil y de la Actividad Financiera de México, Director del Instituto de Derecho Empresarial de la Academia Nacional de Derecho y Ciencias Sociales y Director del Instituto de Derecho Comercial del Colegio Público de Abogados. Ha recibido diversos premios como, por ejemplo, el Premio Konex en el rubro “Humanidades” (2006), “Premio Justicia 2009”, otorgado por la Universidad de Ciencias Empresariales y Sociales (UCES), por su “Descollante Aporte al Derecho Latinoamericano”, otorgado por la Asociación Iberoamericana de Derecho Privado (2012), y premio Konex de Platino 2016, rubro “Humanidades”, “Derecho Comercial” (2016). Fue elegido por la Revista especializada Chambers and Partners como uno de los 100 abogados más importantes del mundo (Londres, Inglaterra, año 2000).
-
-                                        <br><br>
-                                        Fue miembro de diferentes comisiones de reformas al Código Civil y Comercial: Miembro de las Comisiones de Unificación y Reformas al Código Civil y de Comercio (de 1987 y de 1992) que elaboró los Anteproyectos de Unificación de la Legislación Civil y Comercial; Miembro de la Comisión encargada de la redacción de un nuevo Código Civil (1995), que elaboró el “Proyecto de Código Civil” (unificado con el de Comercio), 1998; Coautor del Proyecto de Ley de Concursos (luego dictada bajo el número 19.551) y su reforma (ley 22.917); Autor del Proyecto de Ley de Leasing (luego ley 25.248) y de la Ley de Caja de Valores (ley 20.643), entre otros proyectos legislativos.
-
-                                        <br><br>
-                                        Es Profesor Emérito de la Universidad de Buenos Aires (desde 2000), habiendo sido Profesor Titular de Derecho Comercial en la Facultad de Derecho de la Universidad de Buenos Aires (desde 1982) y Profesor Titular de Derecho Económico en la Facultad de Ciencias Económicas de esa Universidad (1969-2002). 
-
-                                        <br><br>
-                                        Autor de diversas obras: “Sociedades Anónimas”, “El Aval”, “Algunas cuestiones de Derecho Concursal”, “Actuación del Síndico en Convocatorias y Quiebras”, “Las Sociedades Anónimas en los Países de la Alalc”, “Concursos”, libro en conjunto sobre la obra de Piero Pajardi, “La Ley de Convertibilidad”, en colaboración con Julio César Rivera, y numerosos (más de cien) trabajos en revistas del país y del exterior y ponencias escritas en Congresos y Jornadas. 
-
-                                        <br><br>
-                                        Es director de la “Revista de Derecho Privado y Comunitario”, de la Revista “Derecho Comercial y de las Obligaciones”, del “Suplemento Especial de Concursos y Quiebras” editado por La Ley (trimestral). Ha dictado más de setecientas conferencias y asistido a Congresos y Jornadas en el país y el exterior.
-
-                                        <br><br>
-                                        Es Miembro de diversos tribunales arbitrales (permanentes y ad-hoc) y ha actuado como consultor internacional.
-
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>                                                              
-                      </div>
-                    </div>
-                  </div>
-                </div>  <!-- end modal -->                        
-                <div class="modal fade" id="profesional" tabindex="-1" role="dialog" aria-labelledby="Héctor Alegría">
-                  <div class="modal-dialog fullsize" role="document">
-                    <div class="modal-content fullsize bg-1">
-                      <div class="modal-header">
-                        <div class="container">
-                            <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                      </div>
-                      <div class="modal-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6">
-                                        <span class="socio__modal__img" style="background-image: url('img/170731-Estudio Alegria-0023-b.JPG');"></span>
-                                        <p class="paragraph-2 color-3"><b>Idiomas: español, italiano, comprensión de francés e inglés.</b></p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p class="paragraph-2 color-2">
-
-                                        Es socio fundador del Estudio Alegria, Buey Fernández, Fissore & Montemerlo.
-
-                                        <br><br>
-                                        Estudió Derecho en la Universidad de Buenos Aires, Argentina, donde se graduó en 1957. Obtuvo su Doctorado en Derecho y Ciencias Sociales en la misma Universidad. Su tesis doctoral, “El Aval”, obtuvo la máxima calificación (sobresaliente), otorgándosele por la misma el “Premio Facultad” (1971). En 1969 fue galardonado con el premio de “Joven Sobresaliente” otorgado por la Cámara Junior.
-
-                                        <br><br>
-                                        Fue Juez Nacional en lo Comercial (1963-1969), primer Presidente de la Comisión Nacional de Valores (1969-1975) y Conjuez de la Corte Suprema de Justicia de la Nación (1995-1999). 
-
-                                        <br><br>
-                                        Es Académico de número de la Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires; Académico en la Academia de Mercado de Capitales (Argentina), Académico en la Academia de Derecho Bursátil y de la Actividad Financiera de México, Director del Instituto de Derecho Empresarial de la Academia Nacional de Derecho y Ciencias Sociales y Director del Instituto de Derecho Comercial del Colegio Público de Abogados. Ha recibido diversos premios como, por ejemplo, el Premio Konex en el rubro “Humanidades” (2006), “Premio Justicia 2009”, otorgado por la Universidad de Ciencias Empresariales y Sociales (UCES), por su “Descollante Aporte al Derecho Latinoamericano”, otorgado por la Asociación Iberoamericana de Derecho Privado (2012), y premio Konex de Platino 2016, rubro “Humanidades”, “Derecho Comercial” (2016). Fue elegido por la Revista especializada Chambers and Partners como uno de los 100 abogados más importantes del mundo (Londres, Inglaterra, año 2000).
-
-                                        <br><br>
-                                        Fue miembro de diferentes comisiones de reformas al Código Civil y Comercial: Miembro de las Comisiones de Unificación y Reformas al Código Civil y de Comercio (de 1987 y de 1992) que elaboró los Anteproyectos de Unificación de la Legislación Civil y Comercial; Miembro de la Comisión encargada de la redacción de un nuevo Código Civil (1995), que elaboró el “Proyecto de Código Civil” (unificado con el de Comercio), 1998; Coautor del Proyecto de Ley de Concursos (luego dictada bajo el número 19.551) y su reforma (ley 22.917); Autor del Proyecto de Ley de Leasing (luego ley 25.248) y de la Ley de Caja de Valores (ley 20.643), entre otros proyectos legislativos.
-
-                                        <br><br>
-                                        Es Profesor Emérito de la Universidad de Buenos Aires (desde 2000), habiendo sido Profesor Titular de Derecho Comercial en la Facultad de Derecho de la Universidad de Buenos Aires (desde 1982) y Profesor Titular de Derecho Económico en la Facultad de Ciencias Económicas de esa Universidad (1969-2002). 
-
-                                        <br><br>
-                                        Autor de diversas obras: “Sociedades Anónimas”, “El Aval”, “Algunas cuestiones de Derecho Concursal”, “Actuación del Síndico en Convocatorias y Quiebras”, “Las Sociedades Anónimas en los Países de la Alalc”, “Concursos”, libro en conjunto sobre la obra de Piero Pajardi, “La Ley de Convertibilidad”, en colaboración con Julio César Rivera, y numerosos (más de cien) trabajos en revistas del país y del exterior y ponencias escritas en Congresos y Jornadas. 
-
-                                        <br><br>
-                                        Es director de la “Revista de Derecho Privado y Comunitario”, de la Revista “Derecho Comercial y de las Obligaciones”, del “Suplemento Especial de Concursos y Quiebras” editado por La Ley (trimestral). Ha dictado más de setecientas conferencias y asistido a Congresos y Jornadas en el país y el exterior.
-
-                                        <br><br>
-                                        Es Miembro de diversos tribunales arbitrales (permanentes y ad-hoc) y ha actuado como consultor internacional.
-
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>                                                              
-                      </div>
-                    </div>
-                  </div>
-                </div>  <!-- end modal -->                        
-                <div class="modal fade" id="profesional" tabindex="-1" role="dialog" aria-labelledby="Héctor Alegría">
-                  <div class="modal-dialog fullsize" role="document">
-                    <div class="modal-content fullsize bg-1">
-                      <div class="modal-header">
-                        <div class="container">
-                            <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                      </div>
-                      <div class="modal-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6">
-                                        <span class="socio__modal__img" style="background-image: url('img/170731-Estudio Alegria-0023-b.JPG');"></span>
-                                        <p class="paragraph-2 color-3"><b>Idiomas: español, italiano, comprensión de francés e inglés.</b></p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p class="paragraph-2 color-2">
-
-                                        Es socio fundador del Estudio Alegria, Buey Fernández, Fissore & Montemerlo.
-
-                                        <br><br>
-                                        Estudió Derecho en la Universidad de Buenos Aires, Argentina, donde se graduó en 1957. Obtuvo su Doctorado en Derecho y Ciencias Sociales en la misma Universidad. Su tesis doctoral, “El Aval”, obtuvo la máxima calificación (sobresaliente), otorgándosele por la misma el “Premio Facultad” (1971). En 1969 fue galardonado con el premio de “Joven Sobresaliente” otorgado por la Cámara Junior.
-
-                                        <br><br>
-                                        Fue Juez Nacional en lo Comercial (1963-1969), primer Presidente de la Comisión Nacional de Valores (1969-1975) y Conjuez de la Corte Suprema de Justicia de la Nación (1995-1999). 
-
-                                        <br><br>
-                                        Es Académico de número de la Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires; Académico en la Academia de Mercado de Capitales (Argentina), Académico en la Academia de Derecho Bursátil y de la Actividad Financiera de México, Director del Instituto de Derecho Empresarial de la Academia Nacional de Derecho y Ciencias Sociales y Director del Instituto de Derecho Comercial del Colegio Público de Abogados. Ha recibido diversos premios como, por ejemplo, el Premio Konex en el rubro “Humanidades” (2006), “Premio Justicia 2009”, otorgado por la Universidad de Ciencias Empresariales y Sociales (UCES), por su “Descollante Aporte al Derecho Latinoamericano”, otorgado por la Asociación Iberoamericana de Derecho Privado (2012), y premio Konex de Platino 2016, rubro “Humanidades”, “Derecho Comercial” (2016). Fue elegido por la Revista especializada Chambers and Partners como uno de los 100 abogados más importantes del mundo (Londres, Inglaterra, año 2000).
-
-                                        <br><br>
-                                        Fue miembro de diferentes comisiones de reformas al Código Civil y Comercial: Miembro de las Comisiones de Unificación y Reformas al Código Civil y de Comercio (de 1987 y de 1992) que elaboró los Anteproyectos de Unificación de la Legislación Civil y Comercial; Miembro de la Comisión encargada de la redacción de un nuevo Código Civil (1995), que elaboró el “Proyecto de Código Civil” (unificado con el de Comercio), 1998; Coautor del Proyecto de Ley de Concursos (luego dictada bajo el número 19.551) y su reforma (ley 22.917); Autor del Proyecto de Ley de Leasing (luego ley 25.248) y de la Ley de Caja de Valores (ley 20.643), entre otros proyectos legislativos.
-
-                                        <br><br>
-                                        Es Profesor Emérito de la Universidad de Buenos Aires (desde 2000), habiendo sido Profesor Titular de Derecho Comercial en la Facultad de Derecho de la Universidad de Buenos Aires (desde 1982) y Profesor Titular de Derecho Económico en la Facultad de Ciencias Económicas de esa Universidad (1969-2002). 
-
-                                        <br><br>
-                                        Autor de diversas obras: “Sociedades Anónimas”, “El Aval”, “Algunas cuestiones de Derecho Concursal”, “Actuación del Síndico en Convocatorias y Quiebras”, “Las Sociedades Anónimas en los Países de la Alalc”, “Concursos”, libro en conjunto sobre la obra de Piero Pajardi, “La Ley de Convertibilidad”, en colaboración con Julio César Rivera, y numerosos (más de cien) trabajos en revistas del país y del exterior y ponencias escritas en Congresos y Jornadas. 
-
-                                        <br><br>
-                                        Es director de la “Revista de Derecho Privado y Comunitario”, de la Revista “Derecho Comercial y de las Obligaciones”, del “Suplemento Especial de Concursos y Quiebras” editado por La Ley (trimestral). Ha dictado más de setecientas conferencias y asistido a Congresos y Jornadas en el país y el exterior.
-
-                                        <br><br>
-                                        Es Miembro de diversos tribunales arbitrales (permanentes y ad-hoc) y ha actuado como consultor internacional.
-
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>                                                              
-                      </div>
-                    </div>
-                  </div>
-                </div>  <!-- end modal -->                        
-                <div class="modal fade" id="profesional" tabindex="-1" role="dialog" aria-labelledby="Héctor Alegría">
-                  <div class="modal-dialog fullsize" role="document">
-                    <div class="modal-content fullsize bg-1">
-                      <div class="modal-header">
-                        <div class="container">
-                            <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                      </div>
-                      <div class="modal-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6">
-                                        <span class="socio__modal__img" style="background-image: url('img/170731-Estudio Alegria-0023-b.JPG');"></span>
-                                        <p class="paragraph-2 color-3"><b>Idiomas: español, italiano, comprensión de francés e inglés.</b></p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p class="paragraph-2 color-2">
-
-                                        Es socio fundador del Estudio Alegria, Buey Fernández, Fissore & Montemerlo.
-
-                                        <br><br>
-                                        Estudió Derecho en la Universidad de Buenos Aires, Argentina, donde se graduó en 1957. Obtuvo su Doctorado en Derecho y Ciencias Sociales en la misma Universidad. Su tesis doctoral, “El Aval”, obtuvo la máxima calificación (sobresaliente), otorgándosele por la misma el “Premio Facultad” (1971). En 1969 fue galardonado con el premio de “Joven Sobresaliente” otorgado por la Cámara Junior.
-
-                                        <br><br>
-                                        Fue Juez Nacional en lo Comercial (1963-1969), primer Presidente de la Comisión Nacional de Valores (1969-1975) y Conjuez de la Corte Suprema de Justicia de la Nación (1995-1999). 
-
-                                        <br><br>
-                                        Es Académico de número de la Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires; Académico en la Academia de Mercado de Capitales (Argentina), Académico en la Academia de Derecho Bursátil y de la Actividad Financiera de México, Director del Instituto de Derecho Empresarial de la Academia Nacional de Derecho y Ciencias Sociales y Director del Instituto de Derecho Comercial del Colegio Público de Abogados. Ha recibido diversos premios como, por ejemplo, el Premio Konex en el rubro “Humanidades” (2006), “Premio Justicia 2009”, otorgado por la Universidad de Ciencias Empresariales y Sociales (UCES), por su “Descollante Aporte al Derecho Latinoamericano”, otorgado por la Asociación Iberoamericana de Derecho Privado (2012), y premio Konex de Platino 2016, rubro “Humanidades”, “Derecho Comercial” (2016). Fue elegido por la Revista especializada Chambers and Partners como uno de los 100 abogados más importantes del mundo (Londres, Inglaterra, año 2000).
-
-                                        <br><br>
-                                        Fue miembro de diferentes comisiones de reformas al Código Civil y Comercial: Miembro de las Comisiones de Unificación y Reformas al Código Civil y de Comercio (de 1987 y de 1992) que elaboró los Anteproyectos de Unificación de la Legislación Civil y Comercial; Miembro de la Comisión encargada de la redacción de un nuevo Código Civil (1995), que elaboró el “Proyecto de Código Civil” (unificado con el de Comercio), 1998; Coautor del Proyecto de Ley de Concursos (luego dictada bajo el número 19.551) y su reforma (ley 22.917); Autor del Proyecto de Ley de Leasing (luego ley 25.248) y de la Ley de Caja de Valores (ley 20.643), entre otros proyectos legislativos.
-
-                                        <br><br>
-                                        Es Profesor Emérito de la Universidad de Buenos Aires (desde 2000), habiendo sido Profesor Titular de Derecho Comercial en la Facultad de Derecho de la Universidad de Buenos Aires (desde 1982) y Profesor Titular de Derecho Económico en la Facultad de Ciencias Económicas de esa Universidad (1969-2002). 
-
-                                        <br><br>
-                                        Autor de diversas obras: “Sociedades Anónimas”, “El Aval”, “Algunas cuestiones de Derecho Concursal”, “Actuación del Síndico en Convocatorias y Quiebras”, “Las Sociedades Anónimas en los Países de la Alalc”, “Concursos”, libro en conjunto sobre la obra de Piero Pajardi, “La Ley de Convertibilidad”, en colaboración con Julio César Rivera, y numerosos (más de cien) trabajos en revistas del país y del exterior y ponencias escritas en Congresos y Jornadas. 
-
-                                        <br><br>
-                                        Es director de la “Revista de Derecho Privado y Comunitario”, de la Revista “Derecho Comercial y de las Obligaciones”, del “Suplemento Especial de Concursos y Quiebras” editado por La Ley (trimestral). Ha dictado más de setecientas conferencias y asistido a Congresos y Jornadas en el país y el exterior.
-
-                                        <br><br>
-                                        Es Miembro de diversos tribunales arbitrales (permanentes y ad-hoc) y ha actuado como consultor internacional.
-
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>                                                              
-                      </div>
-                    </div>
-                  </div>
-                </div>  <!-- end modal -->                        
-                <div class="modal fade" id="profesional" tabindex="-1" role="dialog" aria-labelledby="Héctor Alegría">
-                  <div class="modal-dialog fullsize" role="document">
-                    <div class="modal-content fullsize bg-1">
-                      <div class="modal-header">
-                        <div class="container">
-                            <button type="button" class="close color-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                      </div>
-                      <div class="modal-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6">
-                                        <span class="socio__modal__img" style="background-image: url('img/170731-Estudio Alegria-0023-b.JPG');"></span>
-                                        <p class="paragraph-2 color-3"><b>Idiomas: español, italiano, comprensión de francés e inglés.</b></p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p class="paragraph-2 color-2">
-
-                                        Es socio fundador del Estudio Alegria, Buey Fernández, Fissore & Montemerlo.
-
-                                        <br><br>
-                                        Estudió Derecho en la Universidad de Buenos Aires, Argentina, donde se graduó en 1957. Obtuvo su Doctorado en Derecho y Ciencias Sociales en la misma Universidad. Su tesis doctoral, “El Aval”, obtuvo la máxima calificación (sobresaliente), otorgándosele por la misma el “Premio Facultad” (1971). En 1969 fue galardonado con el premio de “Joven Sobresaliente” otorgado por la Cámara Junior.
-
-                                        <br><br>
-                                        Fue Juez Nacional en lo Comercial (1963-1969), primer Presidente de la Comisión Nacional de Valores (1969-1975) y Conjuez de la Corte Suprema de Justicia de la Nación (1995-1999). 
-
-                                        <br><br>
-                                        Es Académico de número de la Academia Nacional de Derecho y Ciencias Sociales de Buenos Aires; Académico en la Academia de Mercado de Capitales (Argentina), Académico en la Academia de Derecho Bursátil y de la Actividad Financiera de México, Director del Instituto de Derecho Empresarial de la Academia Nacional de Derecho y Ciencias Sociales y Director del Instituto de Derecho Comercial del Colegio Público de Abogados. Ha recibido diversos premios como, por ejemplo, el Premio Konex en el rubro “Humanidades” (2006), “Premio Justicia 2009”, otorgado por la Universidad de Ciencias Empresariales y Sociales (UCES), por su “Descollante Aporte al Derecho Latinoamericano”, otorgado por la Asociación Iberoamericana de Derecho Privado (2012), y premio Konex de Platino 2016, rubro “Humanidades”, “Derecho Comercial” (2016). Fue elegido por la Revista especializada Chambers and Partners como uno de los 100 abogados más importantes del mundo (Londres, Inglaterra, año 2000).
-
-                                        <br><br>
-                                        Fue miembro de diferentes comisiones de reformas al Código Civil y Comercial: Miembro de las Comisiones de Unificación y Reformas al Código Civil y de Comercio (de 1987 y de 1992) que elaboró los Anteproyectos de Unificación de la Legislación Civil y Comercial; Miembro de la Comisión encargada de la redacción de un nuevo Código Civil (1995), que elaboró el “Proyecto de Código Civil” (unificado con el de Comercio), 1998; Coautor del Proyecto de Ley de Concursos (luego dictada bajo el número 19.551) y su reforma (ley 22.917); Autor del Proyecto de Ley de Leasing (luego ley 25.248) y de la Ley de Caja de Valores (ley 20.643), entre otros proyectos legislativos.
-
-                                        <br><br>
-                                        Es Profesor Emérito de la Universidad de Buenos Aires (desde 2000), habiendo sido Profesor Titular de Derecho Comercial en la Facultad de Derecho de la Universidad de Buenos Aires (desde 1982) y Profesor Titular de Derecho Económico en la Facultad de Ciencias Económicas de esa Universidad (1969-2002). 
-
-                                        <br><br>
-                                        Autor de diversas obras: “Sociedades Anónimas”, “El Aval”, “Algunas cuestiones de Derecho Concursal”, “Actuación del Síndico en Convocatorias y Quiebras”, “Las Sociedades Anónimas en los Países de la Alalc”, “Concursos”, libro en conjunto sobre la obra de Piero Pajardi, “La Ley de Convertibilidad”, en colaboración con Julio César Rivera, y numerosos (más de cien) trabajos en revistas del país y del exterior y ponencias escritas en Congresos y Jornadas. 
-
-                                        <br><br>
-                                        Es director de la “Revista de Derecho Privado y Comunitario”, de la Revista “Derecho Comercial y de las Obligaciones”, del “Suplemento Especial de Concursos y Quiebras” editado por La Ley (trimestral). Ha dictado más de setecientas conferencias y asistido a Congresos y Jornadas en el país y el exterior.
-
-                                        <br><br>
-                                        Es Miembro de diversos tribunales arbitrales (permanentes y ad-hoc) y ha actuado como consultor internacional.
-
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>                                                              
-                      </div>
-                    </div>
-                  </div>
-                </div>  <!-- end modal -->                        
             </div>            
         </section>
         <section class="quote" id="quote5">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 text-center">
+                    <div class="col-xs-12 text-center wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                         <h2>"Siempre es el momento apropiado 
                         <br><span>para hacer lo correcto"</span>
                         <br><small>Martin Luther King</small>
@@ -1735,32 +1651,33 @@
             </div>
         </section>        
         <section class="content bg-1" id="contacto">
-            <div class="container">
+            <div class="container wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                 <div class="row">
                     <div class="col-xs-12 ">
-                        <p class="h5"><small class="color-3">Mandanos tu consulta</small></p>
+                        <p class="h2 color-3 visible-xs">Mandanos tu consulta</p>
+                        <p class="hidden-xs paragraph-1 color-3"><b>Mandanos tu consulta</b></p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <form action="post" id="contact-form" class="form">
+                        <form id="contact-form" class="form">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" name="nombre" placeholder="Nombre">
-                                    <input type="email" class="form-control" name="email" placeholder="Email">
-                                    <span class="divider"></span>
+                                    <input type="text" required class="form-control" name="nombre" placeholder="Nombre" value="valor">
+                                    <input type="email" required class="form-control" name="email" placeholder="Email" value="toro70568@gmail.com">
+                                    <span class="divider hidden-xs"></span>
 
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" name="apellido" placeholder="Apellido">
-                                    <input type="text" class="form-control" name="telefono" placeholder="Teléfono">
+                                    <input type="text" required class="form-control" name="apellido" placeholder="Apellido" value="valor">
+                                    <input type="text" required class="form-control" name="telefono" placeholder="Teléfono" value="valor">
 
                                 </div>
                                 <div class="col-xs-12">
-                                    <input type="text" class="form-control" name="telefono" placeholder="Asunto">
+                                    <input type="text" required class="form-control" name="asunto" placeholder="Asunto" value="valor">
                                 </div>
                                 <div class="col-xs-12">
-                                    <textarea name="mensaje" id="mensaje" cols="20" rows="2" class="form-control" placeholder="Escribí tu mensaje"></textarea>
+                                    <textarea name="mensaje" required id="mensaje" cols="20" rows="2" class="form-control" placeholder="Escribí tu mensaje">valor</textarea>
                                 </div>
                                 <button type="submit" class="animated btn btn-sm">ENVIAR</button>
                             </div>
@@ -1773,17 +1690,18 @@
                                 <a class="color-2" href="mailto:info@estudioabffm.com.ar">info@estudioabffm.com.ar</a>
                                 <a class="color-2" href="mailto:cv@estudioabffm.com.ar">cv@estudioabffm.com.ar</a>
                             </li>
-                            <li><span><i class="color-3 fa fa-map-marker" aria-hidden="true"></i></span><a class="color-2" href="javascript:;">Av. Santa Fe 1621, 6º, 5º y 4º piso (C1060ABC) CABA.</a></li>
+                            <li><span><i class="color-3 fa fa-map-marker" aria-hidden="true"></i></span><a class="color-2" href="https://www.google.com.ar/maps/place/Av.+Santa+Fe+1621,+C1060ABC+CABA/@-34.5957772,-58.3926349,17z/data=!3m1!4b1!4m8!1m2!2m1!1sAv.+Santa+Fe+1621!3m4!1s0x95bccabe8ffcda61:0x201c65dcc724c432!8m2!3d-34.5957816!4d-58.3904462" target="_blank">Av. Santa Fe 1621, 6º, 5º y 4º piso (C1060ABC) CABA.</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>     
         <section class="content bg-1" id="rrhh">
-            <div class="container">
+            <div class="container wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="300ms">
                 <div class="row">
                     <div class="col-xs-12 ">
-                        <p class="h5"><small class="color-3">Trabajá con nosotros</small></p>
+                        <p class="h2 color-3 visible-xs">Trabajá con nosotros</p>
+                        <p class="hidden-xs paragraph-1 color-3"><b>Trabajá con nosotros</b></p>
                     </div>
                 </div>
                 <div class="row">
@@ -1794,7 +1712,7 @@
                                     <div class="col-md-6">
                                         <input type="text" class="form-control" name="nombre" placeholder="Nombre">
                                         <input type="email" class="form-control" name="email" placeholder="Email">
-                                        <span class="divider"></span>
+                                        <span class="divider hidden-xs"></span>
 
                                     </div>
                                     <div class="col-md-6">
@@ -1805,7 +1723,7 @@
                                     <div class="col-xs-12">
                                         <textarea name="mensaje" id="mensaje" cols="20" rows="2" class="form-control" placeholder="Escribí tu mensaje"></textarea>
                                     </div>
-                                    <span class="divider"></span>
+                                    <span class="divider hidden-xs"></span>
                                 </div>
                                 <div class="col-md-4">
                                     <label for="cv">Subí tu CV
@@ -1826,7 +1744,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 <!--         <script src="js/jquery.js"></script>
- -->        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.min.js"></script> -->
         <script src="js/plugins.js"></script>
         <script src="js/wow.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

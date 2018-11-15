@@ -94,6 +94,11 @@ textarea {
 section.content {
     padding: 120px 0 100px;
 }
+@media screen and (max-width: 768px) {
+    section.content {
+        padding: 50px 0 30px;
+    }
+}
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -121,8 +126,10 @@ a {
 }
 a:hover,
 a:focus,
+a:active,
 a:visited {
     text-decoration: none;
+    outline: none;
 }
 /* ==========================================================================
    Author's custom styles
@@ -158,7 +165,7 @@ h3 {
     font-weight: 300;
 }
 .paragraph-2 {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 18px;
     font-weight: 300;
 }
@@ -182,13 +189,25 @@ h3 {
 /*
  * Hide visually and from screen readers
  */
- .img-responsive {    display: inline-block; }
+.modal-header .close {
+    opacity: 1;
+    color: #000;
+}
+.modal-header .close:hover,
+.modal-header .close:active,
+.modal-header .close:visited,
+.modal-header .close:focus {
+    opacity: 1;
+    color: #d03938;
+    outline: none;
+}
+ .img-responsive { display: inline-block; }
 .fullheight {
     height: 100vh;
 }
 .fullsize {
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
+    width: 100vw;
     display: inline-block;
     position: relative;
 }
@@ -221,15 +240,21 @@ h3 {
 .modal-header .close {
     float: left;
     font-size: 45px;
-    color: #FFF;
+    /*color: #FFF;*/
 }
 .modal-dialog {
     margin: 0;
+}
+.modal-content {
+    border-radius: 0;
+    max-height: auto;
+    padding-bottom: 80px;
 }
 /*====FIN MODAL ESTILOS===*/
 /*---seccion con quote*/
  section.quote {
     height: 560px;
+    overflow: hidden;
  }
  section.quote {
     text-transform: uppercase;
@@ -254,6 +279,20 @@ h3 {
  }
  section.quote h2 span {
     color: #d03938;
+ }
+ @media screen and (max-width: 768px){
+     section.quote {
+        height: 350px;
+        background-attachment: initial;
+     }    
+    section.quote h2 {
+        margin-top: 175px;
+        font-size: 34px;
+
+    }
+     section.quote .col-xs-12.text-center {
+        text-align: left;
+     }
  }
  /*===botones===*/
  .btn-bordered {
@@ -446,6 +485,8 @@ h3 {
     .navbar-header {
         position: relative;
         width: 100%;
+        padding: 15px 0;
+        margin: 0!important;
     }
     .navbar-collapse.collapse {
         display: none !important;
@@ -457,9 +498,7 @@ h3 {
     .main-nav {
         background: #000000d1;
     }
-    .navbar-header {
-        padding: 15px 0;
-    }
+    
     .navbar-brand {
         height: auto;
         padding: 0;
@@ -468,10 +507,13 @@ h3 {
         margin: 0;
     }
     .main-nav .navbar-brand {
-        width: 76px;
+        width: 96px;
     }
     .main-nav.scroll .navbar-brand {
-        width: 50px;    
+        width: 76px;    
+    }
+    .main-nav .navbar-brand img {
+        width: 100%;
     }
     .navbar-toggle .icon-bar {
         display: block;
@@ -490,15 +532,27 @@ h3 {
     .navbar-nav>li:last-of-type {
             margin-bottom: 85px;   
     }
+    .navbar-nav form{
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-nav form small {
+        font-weight: inherit;
+    }
+    .navbar-nav>li button,
     .navbar-nav>li>a {
         font-size: 25px;
-        line-height: 26px;
+        background: transparent;
+        border: none;
+        line-height: 29px;
         font-weight: 100;
         color: #FFF;
         padding: 20px 10px 20px 0;
     }
+    .nav>li button:focus, .nbuttonv>li button:hover,
     .nav>li>a:focus, .nav>li>a:hover {
         text-decoration: none;
+        outline:none;
         background-color: transparent;
         font-weight: 400;
     }    
@@ -506,7 +560,15 @@ h3 {
         max-height: 100vh;
     }
 
+    @media screen and (max-width: 768px) {
+        .main-nav .navbar-nav {
+            margin-left: 15px;
+        }   
+        .navbar-nav>li:first-of-type {
+           margin-top:  5px;   
+        }
 
+    }
 /*Hamburguesa*/
 .hamburger,
 .hamburger:focus{
@@ -622,9 +684,16 @@ h3 {
     background: #00000080;
 }
 .hero .fullsize img {
-    margin-top: 44%;
+    margin-top: 50vh;
     transform: translateY(-50%);
 }
+@media screen and (max-width: 768px) {
+    .hero {
+        background-image: url('../img/small/Estudio_A-BF-F-M_09_med-res-byn.jpg');
+        }
+
+}
+
 /*---fin hero---*/
 
 
@@ -650,6 +719,26 @@ h3 {
 #quote5 {
     background-image: url('../img/quote5.jpg');
 }
+@media screen and (max-width: 768px) {
+    #quote1 {
+        background-image: url('../img/small/quote1.jpg');
+    }
+    #quote2 {
+        background-image: url('../img/small/quote2.jpg');
+    }
+    #quote3 {
+        background-image: url('../img/small/quote3.jpg');
+    }
+    #quote4 {
+        background-image: url('../img/small/quote4.jpg');
+        background-position: center;
+    }
+    #quote5 {
+        background-image: url('../img/small/quote5.jpg');
+    }
+
+}
+
 /*========FIN QUOTES======*/
 
 
@@ -659,25 +748,53 @@ h3 {
 }
 #referencias ul {
     margin-top: 100px;
+    text-align: center;
+}
+#referencias ul li {
+    float: none;
+    display: inline-block;
+    min-width: 202px;
+    width: 17%;
+    margin: 15px;
+    margin-bottom: 30px;
 }
 #referencias ul li a {
     opacity: .4;
+    filter: grayscale(100%);
+}
+#referencias ul li:first-of-type {
+    margin-left: 0;
+}
+#referencias ul li:last-of-type {
+    margin-right: 0;
 }
 #referencias ul li a:hover,
 #referencias ul li a:active,
 #referencias ul li a:visited,
 #referencias ul li a:focus{
+    filter: grayscale(0%);
     opacity: 1;
     outline: none;
 }
+#referencias .modal-header .close {
+    color: #FFF;
+}
 
-
+@media screen and (max-width: 768px) {
+    #referencias ul li {
+        /*float: left;*/
+    }
+}
 /*========FIN REFERENCIAS======*/
 
 
 /*========PRACTICA======*/
+#practica .practica-listado {
+    margin-top: 80px;
+}
 #practica .practica-listado li {
     display: table;
+    margin-bottom: 20px;
 }
 #practica .practica-listado li a:hover,
 #practica .practica-listado li a:active,
@@ -706,6 +823,9 @@ h3 {
     padding-left: 0px;
     text-transform: uppercase;
 }
+#practica .modal-header .close {
+    color: #FFF;
+}
 /*========FIN PRACTICA======*/
 
 
@@ -713,7 +833,7 @@ h3 {
 /*========SOCIOS======*/
 
 #socios .socios-listado li {
-     display: block|;
+     display: block;
      margin-bottom: 50px;
      height: 240px;
  }
@@ -735,7 +855,7 @@ h3 {
      background-size: cover!important;
      display: inline-block;
      width: 220px;
-     height: 220px;
+     height: 255px;
  
  }
  #socios .socios-listado li>.socio__data {
@@ -750,8 +870,8 @@ h3 {
     margin-bottom: 20px;
  }
  #socios .socios-listado li .socio__data {
-    height: 220px;
-    max-height: 220px;
+    height: 255px;
+    max-height: 255px;
     box-sizing: border-box;
  }
  #socios .socios-listado li .socio__data a {
@@ -776,12 +896,77 @@ h3 {
  #socios .modal .socio__modal__img {
     width: 100%;
     height: 80vh;
+    background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
  }
- #socios .modal .close {
-    color: #000;
- }
+
+@media  screen and (max-width: 1200px) {
+
+    #socios .socios-listado li {
+         display: block;
+         margin-bottom: 50px;
+         height: 340px;
+     }    
+     #socios .socios-listado li span:first-of-type  span {
+         background-size: cover!important;
+         display: inline-block;
+         width: 170px;
+         height: 300px;
+     
+     }
+    #socios .socios-listado li>.socio__data {
+        width: calc(100% - 180px);
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 15px;
+        height: 300px;
+        max-height: 300px;
+    }     
+    #socios .socios-listado li .socio__data__nombre {
+        margin-bottom: 10px;
+    }     
+    #socios .socios-listado li .socio__data a     {
+        left: 10px;
+    }
+}
+@media  screen and (max-width: 768px) {
+    #socios .socios-listado {
+        text-align: center;
+        padding: 0 30px;
+    }
+    #socios .socios-listado li:nth-child(2)>span:first-of-type span,
+    #socios .socios-listado li:nth-child(1)>span:first-of-type span {
+        background-position-y: 0;
+    }
+    #socios .socios-listado li>span:first-of-type {
+        width: 100%;
+        max-width: 400px;
+    }
+    #socios .socios-listado li>span:first-of-type span {
+        background-position: center top;
+        background-position-y: -50px;
+        display: block;
+        width: 100%;
+    }
+    #socios .socios-listado li>span:first-of-type a {
+        float: left;
+        margin-top: 10px;
+    }
+    #socios .socios-listado li>span:first-of-type a:hover,
+    #socios .socios-listado li>span:first-of-type a:focus,
+    #socios .socios-listado li>span:first-of-type a:hover,
+    #socios .socios-listado li>span:first-of-type a:hover,
+    #socios .socios-listado li .socio__data {
+        display: none;
+    }
+     #socios .modal .socio__modal__img {
+        height: 50vh;
+     }
+    #socio1 .socio__modal__img {
+        background-position-y: -40px;
+    }
+}
 /*========FIN SOCIOS======*/
 
 
@@ -795,6 +980,12 @@ h3 {
     margin-bottom: 100px;
     padding: 0 20px;
 }
+#profesionales .profesional-listado li:nth-child(2) .profesional__img span{ 
+    background-position-y: 0;
+}
+#profesionales .profesional-listado li:nth-child(2) .profesional__img span{ 
+    background-position-y: 0;
+}
 #profesionales .profesional-listado li>span {
     display: block;
 }
@@ -804,7 +995,7 @@ h3 {
 }
 #profesionales .profesional-listado li span:first-of-type  span {
     background-size: cover!important;
-    background-position: center;
+    background-position: top center;
     padding: 0!important;
     display: inline-block;
     width: 100%;
@@ -817,6 +1008,7 @@ h3 {
 }
 #profesionales .profesional-listado li .profesional__data span {
     display: block;
+    background-size: cover;
 }
 #profesionales .profesional-listado li .profesional__data__nombre {
     font-weight: 500;
@@ -828,7 +1020,7 @@ h3 {
 #profesionales .profesional-listado li .profesional__data a {
     margin-top: 10px;
     color:#808080;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 500;
 }
 #profesionales .profesional-listado li .profesional__data a:hover,
@@ -838,7 +1030,45 @@ h3 {
     text-decoration: none;
     font-weight: 600;
 }
+ #profesionales .modal .socio__modal__img {
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    display: inline-block;
+ }
+ #profesionales .modal .close {
+    /*color: #000;*/
+ }
 
+@media screen and (max-width: 768px) {
+    #profesionales .profesional-listado li span:first-of-type span {
+        height: 190px;
+        background-position-y: -20px;
+        background-repeat: no-repeat;
+
+    }
+    #profesionales .profesional-listado li {
+        height: 265px;
+        margin-bottom: 30px;
+    }
+    #profesionales .profesional-listado li .profesional__img span {
+        background-position-y: 0!important;
+        background-position-x: 0!important;
+
+    }
+    #profesionales .profesional-listado li:nth-child(8) .profesional__img span,
+    #profesionales .profesional-listado li:nth-child(6) .profesional__img span{ 
+        background-position-y: 0!important;
+        background-position-x: 0!important;
+    }
+    #profesionales .profesional-listado li:nth-child(3) .profesional__img span,
+    #profesionales .profesional-listado li:nth-child(4) .profesional__img span{ 
+        background-position-y: 0!important;
+        /*background-position-x: 0!important;*/
+    }
+
+    
+}
 /*========FIN profesional======*/
 
 
@@ -916,8 +1146,8 @@ form button.btn:focus {
 #contacto .list-unstyled li{
     position: relative;
     padding-left: 50px;
-    font-size: 28px;
-    line-height: 33px;
+    font-size: 23px;
+    line-height: 28px;
     margin-bottom: 25px;
     font-weight: 300;
 }
@@ -932,15 +1162,38 @@ form button.btn:focus {
     line-height: 33px;
 
 }
+#contacto .list-unstyled li span i.fa-envelope {
+    font-size: 19px;
+}
 #contacto .list-unstyled li a+a {
     margin-top: 10px;
     display: inline-block;
 }
 #contacto .list-unstyled li a:hover,
 #contacto .list-unstyled li a:focus,
-#contacto .list-unstyled li a:active,
-#contacto .list-unstyled li a:visited{
+#contacto .list-unstyled li a:active{
     color: #d03938;
+}
+
+@media screen and (max-width: 768px) {
+    #contacto .list-unstyled {
+        text-align: center; 
+        margin-top: 30px;
+    }
+    #contacto .list-unstyled li {
+        font-size: 18px;
+        line-height: 18px;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+    #contacto .list-unstyled li span {
+        position: relative;
+        margin-right: 7px;
+    }
+}
+#contacto p.color-3,
+#rrhh p.color-3 {
+    margin-bottom: 30px;
 }
 #cv-form .form-control.invisible {
     position: absolute;
@@ -951,8 +1204,8 @@ form button.btn:focus {
     
 }
 #cv-form p small {
-    font-size: 9px;   
-    line-height: 9px;
+    font-size: 11px;   
+    line-height: 11px;
     font-weight: 350;
     color: #575858;
 }
@@ -978,4 +1231,50 @@ form button.btn:focus {
     color: #575858;
 
 }
+@media screen and (max-width: 768px) {
+    #rrhh {
+        padding-top: 150px;
+    }
+}
 /*========fin CONTACTO======*/
+/*========inicio FOOTER======*/
+footer {
+    padding: 30px 0 50px;
+}
+footer .fa-linkedin {
+    font-size: 20px;
+}
+footer ul li {
+    font-size: 11px;
+    font-weight: 300;
+    margin-bottom: 7px;
+}
+footer ul li a:hover,
+footer ul li a:focus,
+footer ul li a:active {
+    color: #d03938;
+}
+footer img {
+    margin:15px 0;
+}
+/*========fin FOOTER======*/
+.modal  {
+    position: initial;
+    padding: 0!important;
+    width: 100%;
+}
+.modal  .modal-dialog {
+    width: 100%;
+}
+#referencia .modal .modal-content {
+    height: auto;
+    min-height: auto;      
+}
+body.modal-open {
+    padding-right: 0!important;
+    overflow-y: auto!important;
+}
+ .modal-content {
+    box-shadow: none!important;
+    border: none;
+ }
